@@ -39,6 +39,8 @@
 
 <body class="bg-[color:var(--bg)] text-[color:var(--ink)]">
 
+  </div>
+
   <!-- Header -->
   <header class="bg-white sticky top-0 z-50 border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -53,6 +55,7 @@
 
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-700">
+        <a href="#home" class="hover:text-[color:var(--brand-blue)] transition">HOME</a>
         <a href="#about" class="hover:text-[color:var(--brand-blue)] transition">ABOUT</a>
         <a href="#services" class="hover:text-[color:var(--brand-blue)] transition">SERVICES</a>
         <a href="#products" class="hover:text-[color:var(--brand-blue)] transition">PRODUCTS</a>
@@ -74,6 +77,7 @@
     <!-- Mobile dropdown -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
       <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-slate-700">
+        <a href="#home" class="py-2">HOME</a>
         <a href="#about" class="py-2">ABOUT</a>
         <a href="#services" class="py-2">SERVICES</a>
         <a href="#products" class="py-2">PRODUCTS</a>
@@ -205,248 +209,296 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+    <!-- ABOUT -->
   <section id="about" class="max-w-6xl mx-auto px-4 py-14">
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-      <div class="reveal">
-        <h2 class="text-3xl font-extrabold">About Dorvas Technologies</h2>
-        <p class="mt-4 text-[color:var(--muted)] leading-relaxed">
-          Dorvas Technologies is an Information Technology and Consulting Services company registered under the Companies and Allied Matters Act 2020
-          on <b>22 May, 2025</b>. We help individuals and organisations build digital competence and implement practical technology solutions.
+    <div class="reveal">
+      <h2 class="text-3xl md:text-4xl font-extrabold">About Dorvas Technologies</h2>
+      <p class="mt-4 text-[color:var(--muted)] leading-relaxed max-w-4xl">
+        Dorvas Technologies is an Information Technology and Consulting Services company registered under the Companies and Allied Matters Act (CAMA) 2020
+        on <b>22 May, 2025</b>. We help individuals and organisations build digital competence and implement practical technology solutions.
+      </p>
+    </div>
+
+    <!-- Vision / Mission / Core Values (Styled like your sample) -->
+    <div class="mt-12 grid lg:grid-cols-3 gap-8 items-end">
+      <!-- Vision -->
+      <div class="reveal rounded-[36px] bg-[#FF8A00] text-white p-10 shadow-sm relative overflow-hidden min-h-[320px]">
+        <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
+          <!-- lightbulb icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18h6"/>
+            <path d="M10 22h4"/>
+            <path d="M12 2a7 7 0 0 0-4 12c.6.6 1 1.4 1 2.3V17h6v-.7c0-.9.4-1.7 1-2.3A7 7 0 0 0 12 2z"/>
+          </svg>
+        </div>
+
+        <h3 class="mt-8 text-2xl font-extrabold">Vision</h3>
+        <p class="mt-4 text-white/90 leading-relaxed">
+          To be the most reliable tech hub in Port Harcourt and globally.
         </p>
 
-        <div class="mt-7 grid gap-4">
-          <div class="bg-white border border-slate-200 rounded-3xl p-6">
-            <div class="font-bold text-[color:var(--brand-blue)]">Vision</div>
-            <div class="mt-1 text-sm text-[color:var(--muted)]">To be the most reliable tech hub in Port Harcourt and globally.</div>
-          </div>
-          <div class="bg-white border border-slate-200 rounded-3xl p-6">
-            <div class="font-bold text-[color:var(--brand-blue)]">Mission</div>
-            <div class="mt-1 text-sm text-[color:var(--muted)]">
-              To provide reliable, honest and practical technology solutions and training—delivered with speed, clarity, and measurable value.
-            </div>
-          </div>
-        </div>
+        <div class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-2xl"></div>
       </div>
 
-      <div class="reveal bg-white border border-slate-200 rounded-3xl p-6">
-        <h3 class="text-xl font-extrabold">Core values</h3>
-        <ul class="mt-4 space-y-3 text-sm text-[color:var(--muted)]">
-          <li><b class="text-slate-900">Reliability</b> — do what we say we will do.</li>
-          <li><b class="text-slate-900">Fast delivery</b> — structured work, clear milestones.</li>
-          <li><b class="text-slate-900">Honesty & scam-free</b> — transparent pricing, realistic commitments.</li>
-          <li><b class="text-slate-900">Unending innovation</b> — continuous improvement.</li>
-          <li><b class="text-slate-900">Community impact</b> — growing talent and supporting progress.</li>
+      <!-- Mission -->
+      <div class="reveal rounded-[36px] bg-[#1C7A3A] text-white p-10 shadow-sm relative overflow-hidden min-h-[420px]">
+        <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
+          <!-- power icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v10"/>
+            <path d="M6.4 4.4a9 9 0 1 0 11.2 0"/>
+          </svg>
+        </div>
+
+        <h3 class="mt-8 text-2xl font-extrabold">Mission</h3>
+        <p class="mt-4 text-white/90 leading-relaxed">
+          To provide reliable, honest and practical technology solutions and training — delivered with speed, clarity, and measurable value.
+        </p>
+
+        <div class="mt-6 text-white/90">
+          <div class="font-bold">What this means in real life:</div>
+          <ul class="mt-3 space-y-2">
+            <li>• Practical training you can apply immediately</li>
+            <li>• Transparent delivery (no hype, no excuses)</li>
+            <li>• Real support — before, during and after delivery</li>
+          </ul>
+        </div>
+
+        <div class="absolute -top-12 -left-12 h-44 w-44 rounded-full bg-black/15 blur-2xl"></div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="reveal rounded-[36px] bg-[#031B12] text-white p-10 shadow-sm relative overflow-hidden min-h-[480px]">
+        <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
+          <!-- people icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+
+        <h3 class="mt-8 text-2xl font-extrabold">Core Values</h3>
+
+        <ul class="mt-5 space-y-3 text-white/90 leading-relaxed">
+          <li><span class="font-bold">• Reliability</span> — we do what we promise.</li>
+          <li><span class="font-bold">• Fast delivery</span> — structured work with clear milestones.</li>
+          <li><span class="font-bold">• Honesty (Scam‑free)</span> — transparent pricing and realistic timelines.</li>
+          <li><span class="font-bold">• Unending innovation</span> — we keep improving, always.</li>
+          <li><span class="font-bold">• Community impact</span> — we grow talent and support progress.</li>
         </ul>
+
+        <div class="absolute -bottom-16 left-10 h-56 w-56 rounded-full bg-white/5 blur-2xl"></div>
+        <div class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/5 blur-2xl"></div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="bg-white">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-      <div class="reveal text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold tracking-wide">SERVICES</h2>
-        <p class="mt-3 text-[color:var(--muted)] max-w-3xl mx-auto leading-relaxed">
-          Choose a track and let’s build your skill the practical way — real tasks, real tools, real confidence.
-          No long stories. We show you what you’ll learn and what you’ll be able to do.
+<!-- SERVICES -->
+<section id="services" class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-14">
+    <div class="reveal text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-wide">SERVICES</h2>
+      <p class="mt-3 text-[color:var(--muted)] max-w-3xl mx-auto leading-relaxed">
+        Choose a track and let’s build your skill the practical way — real tasks, real tools, real confidence.
+        No long stories. We show you what you’ll learn and what you’ll be able to do.
+      </p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100">
+      <!-- 1 -->
+      <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15 15 0 0 1 0 20"></path>
+            <path d="M12 2a15 15 0 0 0 0 20"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Data Analytics</h3>
+        <p class="mt-4 text-white/85 leading-relaxed">
+          Learn how to clean messy data, build dashboards, and present insights like a professional.
+          You’ll work on real projects — sales reports, survey analysis, and business performance tracking.
         </p>
+
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">Tools you’ll master:</div>
+          <ul class="mt-2 space-y-1 text-white/85">
+            <li>• Advanced Microsoft Excel (Pivot, Power Query, dashboards)</li>
+            <li>• Power BI (visuals, DAX basics, interactive reports)</li>
+            <li>• Python (Basic → Advanced for data: pandas, numpy)</li>
+            <li>• SPSS (analysis for research and surveys)</li>
+            <li>• Research & Data Analysis (interpretation + reporting)</li>
+          </ul>
+        </div>
+
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
+          ENROLL NOW
+        </a>
       </div>
 
-      <div class="mt-10 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100">
-        <!-- 1 -->
-        <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15 15 0 0 1 0 20"></path>
-              <path d="M12 2a15 15 0 0 0 0 20"></path>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Data Analytics</h3>
-          <p class="mt-4 text-white/85 leading-relaxed">
-            Learn how to clean messy data, build dashboards, and present insights like a professional.
-            You’ll work on real projects — sales reports, survey analysis, and business performance tracking.
-          </p>
+      <!-- 2 -->
+      <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 18a4 4 0 0 0 0-8H7a5 5 0 0 0 0 10h9"></path>
+            <polyline points="13 14 16 11 19 14"></polyline>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Digital Marketing</h3>
+        <p class="mt-4 text-white/90 leading-relaxed">
+          If you want customers to notice you, you need more than random posting.
+          We’ll help you build a clean content system, grow your brand, and turn attention into results.
+        </p>
 
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">Tools you’ll master:</div>
-            <ul class="mt-2 space-y-1 text-white/85">
-              <li>• Advanced Microsoft Excel (Pivot, Power Query, dashboards)</li>
-              <li>• Power BI (visuals, DAX basics, interactive reports)</li>
-              <li>• Python (Basic → Advanced for data: pandas, numpy)</li>
-              <li>• SPSS (analysis for research and surveys)</li>
-              <li>• Research & Data Analysis (interpretation + reporting)</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
-            ENROLL NOW
-          </a>
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">What you’ll learn:</div>
+          <ul class="mt-2 space-y-1 text-white/90">
+            <li>• Content strategy + content calendar that works</li>
+            <li>• Social media management (Facebook, Instagram, TikTok)</li>
+            <li>• Ads basics (boosting, targeting, and smart budgeting)</li>
+            <li>• YouTube/Facebook monetization requirements & setup</li>
+            <li>• Simple analytics: what to track and how to improve</li>
+          </ul>
         </div>
 
-        <!-- 2 -->
-        <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 18a4 4 0 0 0 0-8H7a5 5 0 0 0 0 10h9"></path>
-              <polyline points="13 14 16 11 19 14"></polyline>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Digital Marketing</h3>
-          <p class="mt-4 text-white/90 leading-relaxed">
-            If you want customers to notice you, you need more than random posting.
-            We’ll help you build a clean content system, grow your brand, and turn attention into results.
-          </p>
-
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">What you’ll learn:</div>
-            <ul class="mt-2 space-y-1 text-white/90">
-              <li>• Content strategy + content calendar that works</li>
-              <li>• Social media management (Facebook, Instagram, TikTok)</li>
-              <li>• Ads basics (boosting, targeting, and smart budgeting)</li>
-              <li>• YouTube/Facebook monetization requirements & setup</li>
-              <li>• Simple analytics: what to track and how to improve</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20">
-            ENROLL NOW
-          </a>
-        </div>
-
-        <!-- 3 -->
-        <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2l3 7h7l-5.5 4 2.5 7-7-4.5L5 20l2.5-7L2 9h7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Graphics Design</h3>
-          <p class="mt-4 text-white/85 leading-relaxed">
-            Learn design the right way — clean layout, bold typography, and brand-ready visuals.
-            You’ll create flyers, logos, banners, and social media designs that look premium.
-          </p>
-
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">Software you’ll use:</div>
-            <ul class="mt-2 space-y-1 text-white/85">
-              <li>• Adobe Photoshop (editing, flyers, thumbnails)</li>
-              <li>• Adobe Illustrator (logos, vectors, brand assets)</li>
-              <li>• CorelDRAW (print + design workflow)</li>
-              <li>• Color, typography, layout & brand identity</li>
-              <li>• Exporting correctly for print and social media</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
-            ENROLL NOW
-          </a>
-        </div>
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20">
+          ENROLL NOW
+        </a>
       </div>
 
-      <div class="mt-0 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100 border-t-0">
-        <!-- 4 -->
-        <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="14" rx="2"></rect>
-              <path d="M7 20h10"></path>
-              <path d="M9 16v4"></path>
-              <path d="M15 16v4"></path>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Web Design & Development</h3>
-          <p class="mt-4 text-white/85 leading-relaxed">
-            Build modern websites that load fast and look great on phones.
-            Whether it’s a business site, portfolio, or school portal — we teach you and guide you to deploy it properly.
-          </p>
+      <!-- 3 -->
+      <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l3 7h7l-5.5 4 2.5 7-7-4.5L5 20l2.5-7L2 9h7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Graphics Design</h3>
+        <p class="mt-4 text-white/85 leading-relaxed">
+          Learn design the right way — clean layout, bold typography, and brand-ready visuals.
+          You’ll create flyers, logos, banners, and social media designs that look premium.
+        </p>
 
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">Skills & tools:</div>
-            <ul class="mt-2 space-y-1 text-white/85">
-              <li>• HTML, CSS, Tailwind CSS</li>
-              <li>• JavaScript fundamentals</li>
-              <li>• Git & GitHub (save + publish your work)</li>
-              <li>• Hosting & deployment (Vercel), basic SEO</li>
-              <li>• Forms, landing pages, updates & maintenance</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
-            ENROLL NOW
-          </a>
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">Software you’ll use:</div>
+          <ul class="mt-2 space-y-1 text-white/85">
+            <li>• Adobe Photoshop (editing, flyers, thumbnails)</li>
+            <li>• Adobe Illustrator (logos, vectors, brand assets)</li>
+            <li>• CorelDRAW (print + design workflow)</li>
+            <li>• Color, typography, layout & brand identity</li>
+            <li>• Exporting correctly for print and social media</li>
+          </ul>
         </div>
 
-        <!-- 5 -->
-        <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="7"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Training / Coaching</h3>
-          <p class="mt-4 text-white/90 leading-relaxed">
-            Need guidance, accountability, and someone to break things down clearly?
-            Our coaching is structured, practical, and focused on helping you grow fast — online or offline.
-          </p>
-
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">You can be coached on:</div>
-            <ul class="mt-2 space-y-1 text-white/90">
-              <li>• Data Analytics (Excel, Power BI, Python, SPSS)</li>
-              <li>• Web Development (HTML/CSS/JS + deployment)</li>
-              <li>• Graphics Design (Photoshop, Illustrator, CorelDRAW)</li>
-              <li>• Microsoft Certification prep + practice tests</li>
-              <li>• Real projects with feedback until you’re confident</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20">
-            START NOW
-          </a>
-        </div>
-
-        <!-- 6 -->
-        <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
-          <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3v18"></path>
-              <path d="M3 12h18"></path>
-              <path d="M5 5l14 14"></path>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-extrabold">Branding & Printing</h3>
-          <p class="mt-4 text-white/85 leading-relaxed">
-            Stand out with a brand people remember.
-            We help you design and prepare materials the right way — clean, sharp, and print-ready.
-          </p>
-
-          <div class="mt-6 w-full text-left max-w-sm">
-            <div class="font-bold">What we handle:</div>
-            <ul class="mt-2 space-y-1 text-white/85">
-              <li>• Logo + brand identity (colors, fonts, style)</li>
-              <li>• Business cards, flyers, banners, ID cards</li>
-              <li>• Product branding and packaging layouts</li>
-              <li>• Print-ready exports (correct sizes & formats)</li>
-              <li>• Guidance for business visibility</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
-            REQUEST A QUOTE
-          </a>
-        </div>
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
+          ENROLL NOW
+        </a>
       </div>
     </div>
-  </section>
 
-  <!-- PRODUCTS -->
+    <div class="mt-0 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100 border-t-0">
+      <!-- 4 -->
+      <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+            <path d="M7 20h10"></path>
+            <path d="M9 16v4"></path>
+            <path d="M15 16v4"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Web Design & Development</h3>
+        <p class="mt-4 text-white/85 leading-relaxed">
+          Build modern websites that load fast and look great on phones.
+          Whether it’s a business site, portfolio, or school portal — we teach you and guide you to deploy it properly.
+        </p>
+
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">Skills & tools:</div>
+          <ul class="mt-2 space-y-1 text-white/85">
+            <li>• HTML, CSS, Tailwind CSS</li>
+            <li>• JavaScript fundamentals</li>
+            <li>• Git & GitHub (save + publish your work)</li>
+            <li>• Hosting & deployment (Vercel), basic SEO</li>
+            <li>• Forms, landing pages, updates & maintenance</li>
+          </ul>
+        </div>
+
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
+          ENROLL NOW
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Training / Coaching</h3>
+        <p class="mt-4 text-white/90 leading-relaxed">
+          Need guidance, accountability, and someone to break things down clearly?
+          Our coaching is structured, practical, and focused on helping you grow fast — online or offline.
+        </p>
+
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">You can be coached on:</div>
+          <ul class="mt-2 space-y-1 text-white/90">
+            <li>• Data Analytics (Excel, Power BI, Python, SPSS)</li>
+            <li>• Web Development (HTML/CSS/JS + deployment)</li>
+            <li>• Graphics Design (Photoshop, Illustrator, CorelDRAW)</li>
+            <li>• Microsoft Certification prep + practice tests</li>
+            <li>• Real projects with feedback until you’re confident</li>
+          </ul>
+        </div>
+
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20">
+          START NOW
+        </a>
+      </div>
+
+      <!-- 6 -->
+      <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
+        <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <path d="M5 5l14 14"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-extrabold">Branding & Printing</h3>
+        <p class="mt-4 text-white/85 leading-relaxed">
+          Stand out with a brand people remember.
+          We help you design and prepare materials the right way — clean, sharp, and print-ready.
+        </p>
+
+        <div class="mt-6 w-full text-left max-w-sm">
+          <div class="font-bold">What we handle:</div>
+          <ul class="mt-2 space-y-1 text-white/85">
+            <li>• Logo + brand identity (colors, fonts, style)</li>
+            <li>• Business cards, flyers, banners, ID cards</li>
+            <li>• Product branding and packaging layouts</li>
+            <li>• Print-ready exports (correct sizes & formats)</li>
+            <li>• Guidance for business visibility</li>
+          </ul>
+        </div>
+
+        <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm">
+          REQUEST A QUOTE
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PRODUCTS -->
   <section id="products" class="max-w-6xl mx-auto px-4 py-14">
     <div class="reveal">
-      <h2 class="text-3xl font-extrabold">Products</h2>
+      <h2 class="text-3xl font-extrabold">PRODUCTS</h2>
       <p class="mt-3 text-[color:var(--muted)] max-w-3xl">
         Tools we build to support education and learning at scale.
       </p>
@@ -474,7 +526,7 @@
   <section id="testimonials" class="bg-white border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-4 py-14">
       <div class="reveal">
-        <h2 class="text-3xl font-extrabold">Testimonials</h2>
+        <h2 class="text-3xl font-extrabold">TESTIMONIALS</h2>
         <p class="mt-3 text-[color:var(--muted)] max-w-3xl">
           A few words from people we’ve supported. (Replace with your real client testimonials anytime.)
         </p>
@@ -502,85 +554,85 @@
     </div>
   </section>
 
-  <!-- CONTACT (Colorful) -->
+  <!-- CONTACT (FormSubmit -> Gmail) -->
   <section id="contact" class="py-14 bg-gradient-to-br from-slate-50 via-white to-indigo-50 border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-10 items-start">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div class="reveal rounded-3xl bg-white shadow-sm border border-slate-200 p-7">
+        <h2 class="text-3xl font-extrabold text-[color:var(--brand-blue)]">Contact Us</h2>
+        <div class="mt-3 h-1 w-16 rounded-full bg-[color:var(--brand-red)]"></div>
+        <p class="mt-3 text-[color:var(--muted)]">
+          Fill the form and submit. You’ll receive our reply after we review your request.
+        </p>
 
-        <div class="reveal bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
-          <h2 class="text-3xl font-extrabold">Contact</h2>
-          <p class="mt-3 text-[color:var(--muted)]">
-            Fill the form and submit. You’ll receive our reply after we review your request.
-          </p>
+        <div class="mt-6 space-y-3 text-sm text-slate-700">
+          <div><b>Office Address:</b> Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.</div>
+          <div><b>Phone:</b> +234 08162337303</div>
+          <div><b>Email:</b> microsoftportharcourt@gmail.com</div>
+          <div><b>Working Days:</b> Monday – Friday</div>
+          <div><b>Working Time:</b> 8.00 AM – 6.00 PM</div>
+          <div><b>Closed:</b> Saturday & Sunday</div>
+        </div>
+      </div>
 
-          <div class="mt-6 space-y-3 text-sm text-slate-700">
-            <div><b>Office Address:</b> Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.</div>
-            <div><b>Phone:</b> +234 08162337303</div>
-            <div><b>Email:</b> microsoftportharcourt@gmail.com</div>
-            <div><b>Working Days:</b> Monday – Friday</div>
-            <div><b>Working Time:</b> 8.00 AM – 6.00 PM</div>
-            <div><b>Closed:</b> Saturday & Sunday</div>
-          </div>
+      <!-- IMPORTANT: FormSubmit works best when hosted (Vercel is perfect) -->
+      <form
+        action="https://formsubmit.co/microsoftportharcourt@gmail.com"
+        method="POST"
+        class="reveal bg-white border border-slate-200 rounded-3xl p-7 space-y-4 shadow-sm"
+      >
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="Dorvas Technologies - New Contact Request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="https://dovas-beta.vercel.app/thank-you.html">
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <input required name="name" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Full name" />
+          <input required name="phone" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Phone number" />
         </div>
 
-        <!-- IMPORTANT: FormSubmit works best when hosted (Vercel is perfect) -->
-        <form
-          action="https://formsubmit.co/microsoftportharcourt@gmail.com"
-          method="POST"
-          class="reveal bg-white border border-slate-200 rounded-3xl p-6 space-y-4 shadow-sm"
-        >
-          <!-- FormSubmit settings -->
-          <input type="hidden" name="_subject" value="Dorvas Technologies - New Contact Request">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="true">
-          <!-- Redirect after submit -->
-          <input type="hidden" name="_next" value="https://YOUR-VERCEL-DOMAIN.vercel.app/thank-you.html">
+        <input required type="email" name="email" class="border border-slate-200 rounded-xl px-4 py-3 w-full" placeholder="Email address" />
 
-          <div class="grid md:grid-cols-2 gap-4">
-            <input required name="name" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Full name" />
-            <input required name="phone" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Phone number" />
-          </div>
+        <select required name="service" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
+          <option value="" selected disabled>Service interested in</option>
+          <option>Data Analytics Training</option>
+          <option>Data Analytics Consultancy</option>
+          <option>Web Development</option>
+          <option>Vibe Coding</option>
+          <option>Microsoft Certification Coaching</option>
+          <option>Online Coaching</option>
+          <option>Offline Coaching</option>
+          <option>Graphics Design</option>
+          <option>CCTV Installation</option>
+          <option>Social Media Management</option>
+          <option>Social Media Consultancy</option>
+          <option>YouTube Monetization</option>
+          <option>Facebook Monetization</option>
+          <option>Business Plan Development</option>
+          <option>Digital Marketing</option>
+          <option>IT Services</option>
+        </select>
 
-          <input required type="email" name="email" class="border border-slate-200 rounded-xl px-4 py-3 w-full" placeholder="Email address" />
+        <select name="product" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
+          <option value="" selected>Product interested in (optional)</option>
+          <option>Online Learning Platform</option>
+          <option>Exam Portal for Schools</option>
+          <option>Educational Games</option>
+        </select>
 
-          <select required name="service" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
-            <option value="" selected disabled>Service interested in</option>
-            <option>Data Analytics Training</option>
-            <option>Data Analytics Consultancy</option>
-            <option>Web Development</option>
-            <option>Vibe Coding</option>
-            <option>Microsoft Certification Coaching</option>
-            <option>Online Coaching</option>
-            <option>Offline Coaching</option>
-            <option>Graphics Design</option>
-            <option>CCTV Installation</option>
-            <option>Social Media Management</option>
-            <option>Social Media Consultancy</option>
-            <option>YouTube Monetization</option>
-            <option>Facebook Monetization</option>
-            <option>Business Plan Development</option>
-            <option>Digital Marketing</option>
-            <option>IT Services</option>
-          </select>
+        <textarea required name="message" class="border border-slate-200 rounded-xl px-4 py-3 w-full h-28" placeholder="Tell us about your request..."></textarea>
 
-          <select name="product" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
-            <option value="" selected>Product interested in (optional)</option>
-            <option>Online Learning Platform</option>
-            <option>Exam Portal for Schools</option>
-            <option>Educational Games</option>
-          </select>
+        <button type="submit" class="w-full px-6 py-3 rounded-full bg-[color:var(--brand-blue)] text-white font-semibold hover:opacity-90 transition">
+          Send Request
+        </button>
 
-          <textarea required name="message" class="border border-slate-200 rounded-xl px-4 py-3 w-full h-28" placeholder="Tell us about your request..."></textarea>
-
-          <button type="submit" class="w-full px-6 py-3 rounded-full bg-[color:var(--brand-blue)] text-white font-semibold hover:opacity-90 transition">
-            Send Request
-          </button>
-
-          <p class="text-xs text-[color:var(--muted)]">
-            First time setup: FormSubmit will email you a confirmation link. Click “Confirm” to start receiving messages.
-          </p>
-        </form>
-      </div>
+        <p class="text-xs text-[color:var(--muted)]">
+          First time setup: FormSubmit will email you a confirmation link. Click “Confirm” to start receiving messages.
+        </p>
+      </form>
+    </div>
     </div>
   </section>
 
@@ -602,6 +654,7 @@
         </p>
 
         <div class="mt-6 flex items-center gap-3">
+          <!-- Facebook -->
           <a href="https://www.facebook.com/samogide.adiela" target="_blank" rel="noreferrer"
              class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
              aria-label="Facebook" title="Facebook">
@@ -610,6 +663,7 @@
             </svg>
           </a>
 
+          <!-- YouTube -->
           <a href="https://www.youtube.com/@samgoldtales" target="_blank" rel="noreferrer"
              class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
              aria-label="YouTube" title="YouTube">
@@ -618,6 +672,7 @@
             </svg>
           </a>
 
+          <!-- LinkedIn -->
           <a href="https://ng.linkedin.com/in/adiela-sam-ogide-742948120" target="_blank" rel="noreferrer"
              class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
              aria-label="LinkedIn" title="LinkedIn">
@@ -629,19 +684,20 @@
       </div>
 
       <div class="reveal">
-        <h4 class="font-extrabold tracking-wide uppercase">Services</h4>
+        <h4 class="font-extrabold tracking-wide uppercase">SERVICES</h4>
         <ul class="mt-5 space-y-3 text-white/80 text-sm">
           <li><a href="#services" class="hover:text-white transition">Data Analytics Training & Consultancy</a></li>
           <li><a href="#services" class="hover:text-white transition">Web Development</a></li>
           <li><a href="#services" class="hover:text-white transition">Microsoft Certification Coaching</a></li>
+          <li><a href="#services" class="hover:text-white transition">Vibe Coding</a></li>
           <li><a href="#services" class="hover:text-white transition">Graphics Design</a></li>
-          <li><a href="#services" class="hover:text-white transition">Digital Marketing</a></li>
-          <li><a href="#services" class="hover:text-white transition">Branding & Printing</a></li>
+          <li><a href="#services" class="hover:text-white transition">CCTV Installation</a></li>
+          <li><a href="#services" class="hover:text-white transition">Digital Marketing & Social Media</a></li>
         </ul>
       </div>
 
       <div class="reveal">
-        <h4 class="font-extrabold tracking-wide uppercase">Products</h4>
+        <h4 class="font-extrabold tracking-wide uppercase">PRODUCTS</h4>
         <ul class="mt-5 space-y-3 text-white/80 text-sm">
           <li><a href="#products" class="hover:text-white transition">Online Learning Platform</a></li>
           <li><a href="#products" class="hover:text-white transition">Exam Portal for Schools</a></li>
@@ -653,7 +709,7 @@
         <h4 class="font-extrabold tracking-wide uppercase">Company</h4>
         <ul class="mt-5 space-y-3 text-white/80 text-sm">
           <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="#contact" class="hover:text-white transition">CONTACT</a></li>
           <li><a href="mailto:microsoftportharcourt@gmail.com" class="hover:text-white transition">microsoftportharcourt@gmail.com</a></li>
           <li class="text-white/70">
             Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.
@@ -665,13 +721,13 @@
     <div class="border-t border-white/15">
       <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col md:flex-row gap-2 items-start md:items-center justify-between text-white/75 text-sm">
         <div>Copyright @ Dorvas Technologies - All Right Reserved.</div>
-        <a href="#" class="hover:text-white transition">HOME</a>
+        <a href="#" class="hover:text-white transition">Developers</a>
       </div>
     </div>
   </footer>
 
   <script>
-    const mobileBtn = document.getElementById("mobileBtn");
+        const mobileBtn = document.getElementById("mobileBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     mobileBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
 
