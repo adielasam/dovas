@@ -799,6 +799,116 @@
       }
     }
   </script>
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div id="chat-window" class="hidden w-[90vw] sm:w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden mb-4 transition-all duration-300">
+      
+      <div class="bg-[color:var(--brand-blue)] p-4 text-white flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="h-2.5 w-2.5 bg-green-400 rounded-full animate-pulse"></div>
+          <h3 class="font-bold text-sm tracking-wide">Dorvas Assistant</h3>
+        </div>
+        <button id="close-chat" class="text-white/70 hover:text-white font-bold text-xl leading-none">&times;</button>
+      </div>
+
+      <div id="chat-messages" class="h-72 p-4 overflow-y-auto flex flex-col gap-3 bg-slate-50 text-sm">
+        <div class="bg-slate-200 text-slate-800 p-3 rounded-r-xl rounded-bl-xl max-w-[85%] self-start shadow-sm leading-relaxed">
+          Hello! 👋 I'm the Dorvas Assistant. How can I help you today? You can ask me about our <b>services</b>, <b>products</b>, <b>location</b>, or <b>contact</b> details!
+        </div>
+      </div>
+
+      <div class="p-3 bg-white border-t border-slate-100 flex gap-2 items-center">
+        <input type="text" id="chat-input" placeholder="Ask a question..." class="flex-1 bg-slate-100 rounded-full px-4 py-2.5 outline-none text-sm focus:ring-2 ring-[color:var(--brand-blue)] transition-all" onkeypress="handleChatEnter(event)" />
+        <button onclick="sendChatMessage()" class="h-10 w-10 bg-[color:var(--brand-blue)] text-white rounded-full grid place-items-center hover:opacity-90 transition-opacity flex-shrink-0">
+          <svg class="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <button id="chat-toggle" class="h-14 w-14 bg-[color:var(--brand-red)] rounded-full shadow-xl shadow-red-900/20 text-white grid place-items-center hover:scale-110 transition-transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+    </button>
+  </div>
+
+  <script>
+    // --- CHATBOT LOGIC ---
+    const chatWindow = document.getElementById('chat-window');
+    const chatToggle = document.getElementById('chat-toggle');
+    const closeChat = document.getElementById('close-chat');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+
+    // Open/Close chat
+    chatToggle.addEventListener('click', () => chatWindow.classList.toggle('hidden'));
+    closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
+
+    // Trigger send on Enter key
+    function handleChatEnter(e) {
+      if (e.key === 'Enter') sendChatMessage();
+    }
+
+    function sendChatMessage() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+
+      // Add user's message to chat
+      addMessage(text, 'user');
+      chatInput.value = '';
+
+      // Show typing simulation, then reply
+      setTimeout(() => {
+        const reply = getBotResponse(text.toLowerCase());
+        addMessage(reply, 'bot');
+      }, 600);
+    }
+
+    function addMessage(text, sender) {
+      const msgDiv = document.createElement('div');
+      // Style differently if it's the user vs the bot
+      msgDiv.className = `p-3 max-w-[85%] text-sm shadow-sm leading-relaxed ${
+        sender === 'user' 
+        ? 'bg-[color:var(--brand-blue)] text-white rounded-l-xl rounded-tr-xl self-end' 
+        : 'bg-slate-200 text-slate-800 rounded-r-xl rounded-bl-xl self-start'
+      }`;
+      msgDiv.innerHTML = text; // innerHTML allows bold tags
+      chatMessages.appendChild(msgDiv);
+      // Auto-scroll to the bottom
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // THE "BRAIN" OF THE BOT (Keyword matching based on your actual site info)
+    function getBotResponse(input) {
+      if(input.includes('address') || input.includes('location') || input.includes('where') || input.includes('office')) {
+        return "We are located at <b>Suite 58 Georgewill/Clifford Plaza Choba Junction</b>, Port Harcourt, Rivers State, Nigeria.";
+      }
+      if(input.includes('contact') || input.includes('phone') || input.includes('call') || input.includes('email') || input.includes('number')) {
+        return "You can call us at <b>+234 08162337303</b> or email us at <b>microsoftportharcourt@gmail.com</b>. We are open Monday - Friday, 8am to 6pm.";
+      }
+      if(input.includes('data') || input.includes('analytic') || input.includes('excel')) {
+        return "Our <b>Data Analytics</b> track teaches Excel, Power BI, Python, and SPSS. You'll learn to clean data and build professional dashboards. Check the Services section to enroll!";
+      }
+      if(input.includes('web') || input.includes('design') || input.includes('develop') || input.includes('site')) {
+        return "Our <b>Web Development</b> service covers HTML, CSS, Tailwind CSS, JavaScript, and deployment. We build modern, fast websites and school portals.";
+      }
+      if(input.includes('market') || input.includes('digital') || input.includes('seo') || input.includes('social') || input.includes('youtube')) {
+        return "Our <b>Digital Marketing</b> services cover social media management, ads, content strategy, and YouTube/Facebook monetization.";
+      }
+      if(input.includes('graphic') || input.includes('logo') || input.includes('print') || input.includes('brand')) {
+        return "We offer <b>Graphics Design & Branding</b>. We use Photoshop, Illustrator, and CorelDRAW to create premium flyers, logos, and business cards.";
+      }
+      if(input.includes('product') || input.includes('app') || input.includes('game') || input.includes('portal') || input.includes('cbt')) {
+        return "Our products include <b>Online Learning Platforms</b>, <b>CBT Exam Portals</b> for schools, and <b>Educational Games</b>.";
+      }
+      if(input.includes('price') || input.includes('cost') || input.includes('fee') || input.includes('pay') || input.includes('much')) {
+        return "Pricing depends on the specific training or service you need. Please fill out the <b>Contact form</b> on our site or call <b>+234 08162337303</b> to get a quick quote!";
+      }
+      if(input.includes('hello') || input.includes('hi ') || input.includes('hey')) {
+        return "Hello there! How can Dorvas Technologies help you today?";
+      }
+      
+      // Default fallback response if it doesn't recognize the word
+      return "I am a simple automated assistant. I can tell you about our <b>Services</b>, <b>Products</b>, <b>Pricing</b>, or <b>Location</b>. For complex questions, please use our Contact Form or call us directly!";
+    }
+  </script>
 
 </body>
 </html>
