@@ -3,8 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Dorvas Technologies | Reliable Tech Hub in Port Harcourt</title>
+  <meta name="description" content="Dorvas Technologies is a Port Harcourt-based tech hub providing practical training in Data Analytics, Web Development, Digital Marketing, and dependable IT services." />
+  <meta name="keywords" content="Tech Hub Port Harcourt, Data Analytics Training, Web Development Nigeria, Digital Marketing Coaching, IT Services Port Harcourt, Dorvas Technologies, Sir Adiela Sam" />
+  
+  <meta property="og:title" content="Dorvas Technologies | Reliable Tech Hub" />
+  <meta property="og:description" content="Practical training and dependable tech services for individuals, schools, and growing businesses in Nigeria." />
+  <meta property="og:image" content="dorvas-logo.png" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/png" href="dorvas-logo.png" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Dorvas Technologies",
+    "url": "https://dovas-beta.vercel.app/",
+    "logo": "https://dovas-beta.vercel.app/dorvas-logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2348162337303",
+      "contactType": "customer service",
+      "areaServed": "NG"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 58 Georgewill/Clifford Plaza Choba Junction",
+      "addressLocality": "Port Harcourt",
+      "addressRegion": "Rivers State",
+      "addressCountry": "NG"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Sir Adiela Sam"
+    },
+    "description": "Information Technology and Consulting Services company providing practical digital skills training and IT solutions."
+  }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -42,10 +79,10 @@
 
 <body class="bg-[color:var(--bg)] text-[color:var(--ink)]">
 
-  <header class="bg-white sticky top-0 z-50 border-b border-slate-100">
+  <header id="main-header" class="bg-white sticky top-0 z-50 border-b border-slate-100 transition-shadow duration-300">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3">
-        <img src="dorvas-logo.png" alt="Dorvas Technologies Logo" class="h-12 w-auto object-contain" />
+        <img src="dorvas-logo.png" alt="Dorvas Technologies Logo Port Harcourt" class="h-12 w-auto object-contain" />
         <div class="hidden sm:block leading-tight">
           <div class="font-extrabold text-slate-900">Dorvas Technologies</div>
           <div class="text-xs text-slate-500">IT Services • Training • Consulting</div>
@@ -53,13 +90,13 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-700">
-        <a href="#home" class="hover:text-[color:var(--brand-blue)] transition">HOME</a>
-        <a href="#about" class="hover:text-[color:var(--brand-blue)] transition">ABOUT</a>
-        <a href="#services" class="hover:text-[color:var(--brand-blue)] transition">SERVICES</a>
-        <a href="#products" class="hover:text-[color:var(--brand-blue)] transition">PRODUCTS</a>
+        <a href="#home" class="nav-link hover:text-[color:var(--brand-blue)] transition">HOME</a>
+        <a href="#about" class="nav-link hover:text-[color:var(--brand-blue)] transition">ABOUT</a>
+        <a href="#services" class="nav-link hover:text-[color:var(--brand-blue)] transition">SERVICES</a>
+        <a href="#products" class="nav-link hover:text-[color:var(--brand-blue)] transition">PRODUCTS</a>
         <a href="https://sites.google.com/view/samogide/home" target="_blank" rel="noreferrer" class="hover:text-[color:var(--brand-blue)] transition">PORTFOLIO</a>
-        <a href="#testimonials" class="hover:text-[color:var(--brand-blue)] transition">TESTIMONIALS</a>
-        <a href="#contact" class="hover:text-[color:var(--brand-blue)] transition">CONTACT</a>
+        <a href="#testimonials" class="nav-link hover:text-[color:var(--brand-blue)] transition">TESTIMONIALS</a>
+        <a href="#contact" class="nav-link hover:text-[color:var(--brand-blue)] transition">CONTACT</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -72,15 +109,15 @@
       </div>
     </div>
 
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white shadow-lg absolute w-full">
       <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-slate-700">
-        <a href="#home" class="py-2">HOME</a>
-        <a href="#about" class="py-2">ABOUT</a>
-        <a href="#services" class="py-2">SERVICES</a>
-        <a href="#products" class="py-2">PRODUCTS</a>
-        <a href="https://sites.google.com/view/samogide/home" target="_blank" rel="noreferrer" class="py-2">PORTFOLIO</a>
-        <a href="#testimonials" class="py-2">TESTIMONIALS</a>
-        <a href="#contact" class="py-2">CONTACT</a>
+        <a href="#home" class="py-2 hover:text-[color:var(--brand-red)]">HOME</a>
+        <a href="#about" class="py-2 hover:text-[color:var(--brand-red)]">ABOUT</a>
+        <a href="#services" class="py-2 hover:text-[color:var(--brand-red)]">SERVICES</a>
+        <a href="#products" class="py-2 hover:text-[color:var(--brand-red)]">PRODUCTS</a>
+        <a href="https://sites.google.com/view/samogide/home" target="_blank" rel="noreferrer" class="py-2 hover:text-[color:var(--brand-red)]">PORTFOLIO</a>
+        <a href="#testimonials" class="py-2 hover:text-[color:var(--brand-red)]">TESTIMONIALS</a>
+        <a href="#contact" class="py-2 hover:text-[color:var(--brand-red)]">CONTACT</a>
         <a href="#contact" class="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-[color:var(--brand-blue)] text-white font-semibold">
           Book a Call
         </a>
@@ -116,8 +153,8 @@
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#contact" class="px-6 py-3 rounded-full bg-[color:var(--brand-red)] text-white font-semibold hover:opacity-90 transition">
-              Submit a Request
+            <a href="#contact" class="px-6 py-3 rounded-full bg-[color:var(--brand-red)] text-white font-semibold hover:opacity-90 transition shadow-lg shadow-red-900/50">
+              Claim Free Strategy Call
             </a>
             <a href="#products" class="px-6 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 transition font-semibold">
               View Products
@@ -145,34 +182,38 @@
         </div>
 
         <div class="reveal w-full">
-          
           <div class="rounded-3xl glass p-2 shadow-2xl">
             <div class="relative overflow-hidden rounded-2xl border border-white/10 h-[300px] sm:h-[400px] md:h-[480px] w-full">
               <img id="heroSlider" src="dorvasoperation2.jpg" 
-                   alt="Dorvas Technologies operations" 
+                   alt="Dorvas Technologies Port Harcourt Operations and Training" 
                    class="w-full h-full object-cover transition-opacity duration-700" />
               <div class="absolute bottom-4 right-4 flex gap-2" id="dotContainer"></div>
             </div>
           </div>
-
         </div>
 
       </div>
     </div>
   </section>
 
+  <div class="bg-[color:var(--brand-blue)] border-y border-white/10 py-3 text-center">
+    <p class="text-white/80 text-sm font-medium tracking-wide">
+      Trusted by 200+ students and reputable organizations including <span class="font-bold text-white">Spring Valley School</span> & <span class="font-bold text-white">Jephthah College</span>.
+    </p>
+  </div>
+
   <section class="bg-white border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-5">
-      <div class="reveal rounded-3xl border border-slate-200 p-6">
-        <div class="font-extrabold text-lg">Reliability</div>
+      <div class="reveal rounded-3xl border border-slate-200 p-6 hover:shadow-md transition">
+        <div class="font-extrabold text-lg text-slate-800">Reliability</div>
         <p class="mt-2 text-[color:var(--muted)]">Clear scope, honest communication, and consistent follow-through.</p>
       </div>
-      <div class="reveal rounded-3xl border border-slate-200 p-6">
-        <div class="font-extrabold text-lg">Fast delivery</div>
+      <div class="reveal rounded-3xl border border-slate-200 p-6 hover:shadow-md transition">
+        <div class="font-extrabold text-lg text-slate-800">Fast delivery</div>
         <p class="mt-2 text-[color:var(--muted)]">Milestones, timelines, and progress updates you can track.</p>
       </div>
-      <div class="reveal rounded-3xl border border-slate-200 p-6">
-        <div class="font-extrabold text-lg">Scam-free</div>
+      <div class="reveal rounded-3xl border border-slate-200 p-6 hover:shadow-md transition">
+        <div class="font-extrabold text-lg text-slate-800">Scam-free</div>
         <p class="mt-2 text-[color:var(--muted)]">Transparent pricing and realistic promises—no hype.</p>
       </div>
     </div>
@@ -180,7 +221,7 @@
 
   <section id="about" class="max-w-6xl mx-auto px-4 py-14">
     <div class="reveal">
-      <h2 class="text-3xl md:text-4xl font-extrabold">About Dorvas Technologies</h2>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">About Dorvas Technologies</h2>
       <p class="mt-4 text-[color:var(--muted)] leading-relaxed max-w-4xl">
         Dorvas Technologies is an Information Technology and Consulting Services company registered under the Companies and Allied Matters Act (CAMA) 2020
         on <b>22 May, 2025</b>. We help individuals and organisations build digital competence and implement practical technology solutions.
@@ -188,12 +229,10 @@
     </div>
 
     <div class="mt-12 grid lg:grid-cols-3 gap-8 items-end">
-      <div class="reveal rounded-[36px] bg-[#FF8A00] text-white p-10 shadow-sm relative overflow-hidden min-h-[320px]">
+      <div class="reveal rounded-[36px] bg-[#FF8A00] text-white p-10 shadow-lg relative overflow-hidden min-h-[320px] hover:-translate-y-2 transition-transform">
         <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 18h6"/>
-            <path d="M10 22h4"/>
-            <path d="M12 2a7 7 0 0 0-4 12c.6.6 1 1.4 1 2.3V17h6v-.7c0-.9.4-1.7 1-2.3A7 7 0 0 0 12 2z"/>
+            <path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12c.6.6 1 1.4 1 2.3V17h6v-.7c0-.9.4-1.7 1-2.3A7 7 0 0 0 12 2z"/>
           </svg>
         </div>
         <h3 class="mt-8 text-2xl font-extrabold">Vision</h3>
@@ -201,11 +240,10 @@
         <div class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-2xl"></div>
       </div>
 
-      <div class="reveal rounded-[36px] bg-[#1C7A3A] text-white p-10 shadow-sm relative overflow-hidden min-h-[420px]">
+      <div class="reveal rounded-[36px] bg-[#1C7A3A] text-white p-10 shadow-lg relative overflow-hidden min-h-[420px] hover:-translate-y-2 transition-transform">
         <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v10"/>
-            <path d="M6.4 4.4a9 9 0 1 0 11.2 0"/>
+            <path d="M12 2v10"/><path d="M6.4 4.4a9 9 0 1 0 11.2 0"/>
           </svg>
         </div>
         <h3 class="mt-8 text-2xl font-extrabold">Mission</h3>
@@ -223,13 +261,10 @@
         <div class="absolute -top-12 -left-12 h-44 w-44 rounded-full bg-black/15 blur-2xl"></div>
       </div>
 
-      <div class="reveal rounded-[36px] bg-[#031B12] text-white p-10 shadow-sm relative overflow-hidden min-h-[480px]">
+      <div class="reveal rounded-[36px] bg-[#031B12] text-white p-10 shadow-lg relative overflow-hidden min-h-[480px] hover:-translate-y-2 transition-transform">
         <div class="h-16 w-16 rounded-full border border-white/25 bg-white/10 grid place-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
         </div>
         <h3 class="mt-8 text-2xl font-extrabold">Core Values</h3>
@@ -249,27 +284,24 @@
   <section id="services" class="bg-white">
     <div class="max-w-6xl mx-auto px-4 py-14">
       <div class="reveal text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold tracking-wide">SERVICES</h2>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-wide text-slate-900">SERVICES</h2>
         <p class="mt-3 text-[color:var(--muted)] max-w-3xl mx-auto leading-relaxed">
           Choose a track and let’s build your skill the practical way — real tasks, real tools, real confidence.
           No long stories. We show you what you’ll learn and what you’ll be able to do.
         </p>
       </div>
 
-      <div class="mt-10 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100">
+      <div class="mt-10 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100 shadow-xl shadow-slate-200/40">
         <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
           <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15 15 0 0 1 0 20"></path>
-              <path d="M12 2a15 15 0 0 0 0 20"></path>
+              <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15 15 0 0 1 0 20"></path><path d="M12 2a15 15 0 0 0 0 20"></path>
             </svg>
           </div>
           <h3 class="text-2xl font-extrabold">Data Analytics</h3>
           <p class="mt-4 text-white/85 leading-relaxed">
             Learn how to clean messy data, build dashboards, and present insights like a professional.
-            You’ll work on real projects — sales reports, survey analysis, and business performance tracking.
+            You’ll work on real projects.
           </p>
           
           <button type="button" onclick="toggleServiceDetails(this)" class="mt-5 font-bold text-sm border-b-2 border-white/30 hover:border-white transition-colors pb-1 uppercase tracking-wider">READ MORE</button>
@@ -278,30 +310,30 @@
             <div class="mt-6 w-full text-left max-w-sm">
               <div class="font-bold">Tools you’ll master:</div>
               <ul class="mt-2 space-y-1 text-white/85">
-                <li>• Advanced Microsoft Excel (Pivot, Power Query, dashboards)</li>
+                <li>• Advanced Microsoft Excel (Pivot, Power Query)</li>
                 <li>• Power BI (visuals, DAX basics, interactive reports)</li>
                 <li>• Python (Basic → Advanced for data: pandas, numpy)</li>
                 <li>• SPSS (analysis for research and surveys)</li>
-                <li>• Research & Data Analysis (interpretation + reporting)</li>
+                <li>• Research & Data Analysis (interpretation)</li>
               </ul>
             </div>
             <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm w-full max-w-sm">
               ENROLL NOW
             </a>
+            <p class="mt-3 text-xs font-medium text-white/80 animate-pulse">⏳ Next cohort filling up fast!</p>
           </div>
         </div>
 
         <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
           <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 18a4 4 0 0 0 0-8H7a5 5 0 0 0 0 10h9"></path>
-              <polyline points="13 14 16 11 19 14"></polyline>
+              <path d="M16 18a4 4 0 0 0 0-8H7a5 5 0 0 0 0 10h9"></path><polyline points="13 14 16 11 19 14"></polyline>
             </svg>
           </div>
           <h3 class="text-2xl font-extrabold">Digital Marketing</h3>
           <p class="mt-4 text-white/90 leading-relaxed">
             If you want customers to notice you, you need more than random posting.
-            We’ll help you build a clean content system, grow your brand, and turn attention into results.
+            We’ll help you build a clean content system and turn attention into results.
           </p>
 
           <button type="button" onclick="toggleServiceDetails(this)" class="mt-5 font-bold text-sm border-b-2 border-white/30 hover:border-white transition-colors pb-1 uppercase tracking-wider">READ MORE</button>
@@ -320,6 +352,7 @@
             <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20 w-full max-w-sm">
               ENROLL NOW
             </a>
+            <p class="mt-3 text-xs font-medium text-white/80 animate-pulse">⏳ Next cohort filling up fast!</p>
           </div>
         </div>
 
@@ -351,24 +384,22 @@
             <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm w-full max-w-sm">
               ENROLL NOW
             </a>
+            <p class="mt-3 text-xs font-medium text-white/80 animate-pulse">⏳ Next cohort filling up fast!</p>
           </div>
         </div>
       </div>
 
-      <div class="mt-0 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100 border-t-0">
+      <div class="mt-0 grid md:grid-cols-3 gap-0 rounded-3xl overflow-hidden border border-slate-100 border-t-0 shadow-xl shadow-slate-200/40">
         <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
           <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="14" rx="2"></rect>
-              <path d="M7 20h10"></path>
-              <path d="M9 16v4"></path>
-              <path d="M15 16v4"></path>
+              <rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M7 20h10"></path><path d="M9 16v4"></path><path d="M15 16v4"></path>
             </svg>
           </div>
-          <h3 class="text-2xl font-extrabold">Web Design & Development</h3>
+          <h3 class="text-2xl font-extrabold">Web Design & Dev</h3>
           <p class="mt-4 text-white/85 leading-relaxed">
             Build modern websites that load fast and look great on phones.
-            Whether it’s a business site, portfolio, or school portal — we teach you and guide you to deploy it properly.
+            Whether it’s a business site, portfolio, or school portal — we teach you and guide you.
           </p>
 
           <button type="button" onclick="toggleServiceDetails(this)" class="mt-5 font-bold text-sm border-b-2 border-white/30 hover:border-white transition-colors pb-1 uppercase tracking-wider">READ MORE</button>
@@ -387,20 +418,20 @@
             <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-500 transition font-semibold rounded-sm w-full max-w-sm">
               ENROLL NOW
             </a>
+            <p class="mt-3 text-xs font-medium text-white/80 animate-pulse">⏳ Spots are limited!</p>
           </div>
         </div>
 
         <div class="reveal p-10 text-white bg-[#c61f10] flex flex-col items-center text-center">
           <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#0B2A8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="7"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </div>
           <h3 class="text-2xl font-extrabold">Training / Coaching</h3>
           <p class="mt-4 text-white/90 leading-relaxed">
             Need guidance, accountability, and someone to break things down clearly?
-            Our coaching is structured, practical, and focused on helping you grow fast — online or offline.
+            Our coaching is structured, practical, and focused on helping you grow fast.
           </p>
 
           <button type="button" onclick="toggleServiceDetails(this)" class="mt-5 font-bold text-sm border-b-2 border-white/30 hover:border-white transition-colors pb-1 uppercase tracking-wider">READ MORE</button>
@@ -409,11 +440,11 @@
             <div class="mt-6 w-full text-left max-w-sm">
               <div class="font-bold">You can be coached on:</div>
               <ul class="mt-2 space-y-1 text-white/90">
-                <li>• Data Analytics (Excel, Power BI, Python, SPSS)</li>
+                <li>• Data Analytics (Excel, Power BI, Python)</li>
                 <li>• Web Development (HTML/CSS/JS + deployment)</li>
-                <li>• Graphics Design (Photoshop, Illustrator, CorelDRAW)</li>
+                <li>• Graphics Design (Photoshop, Illustrator)</li>
                 <li>• Microsoft Certification prep + practice tests</li>
-                <li>• Real projects with feedback until you’re confident</li>
+                <li>• Real projects with feedback until confident</li>
               </ul>
             </div>
             <a href="#contact" class="mt-8 inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 transition font-semibold rounded-sm border border-black/20 w-full max-w-sm">
@@ -425,9 +456,7 @@
         <div class="reveal p-10 text-white bg-[#2b0a6f] flex flex-col items-center text-center">
           <div class="h-20 w-20 rounded-full bg-white grid place-items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3v18"></path>
-              <path d="M3 12h18"></path>
-              <path d="M5 5l14 14"></path>
+              <path d="M12 3v18"></path><path d="M3 12h18"></path><path d="M5 5l14 14"></path>
             </svg>
           </div>
           <h3 class="text-2xl font-extrabold">Branding & Printing</h3>
@@ -460,16 +489,16 @@
 
   <section id="products" class="bg-slate-50 border-y border-slate-100 py-14">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="reveal mb-10">
+      <div class="reveal mb-10 text-center md:text-left">
         <h2 class="text-3xl font-extrabold text-[color:var(--brand-blue)]">Our Products</h2>
-        <p class="mt-3 text-[color:var(--muted)] max-w-3xl">
+        <p class="mt-3 text-[color:var(--muted)] max-w-3xl mx-auto md:mx-0">
           Tools we build to support education and learning at scale.
         </p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="reveal bg-white border border-slate-200 rounded-2xl p-4 flex flex-col hover:shadow-xl transition-shadow duration-300">
-          <img src="Dorvas Analytics.png" alt="Online Learning Platform" class="w-full h-48 object-cover rounded-xl" />
+          <img src="Product 4  Online School.png" alt="Dorvas Online Learning Platform Nigeria" class="w-full h-48 object-cover rounded-xl" />
           <div class="mt-5 flex-grow">
             <h3 class="text-xl font-semibold text-[color:var(--brand-blue)]">Online Learning Platform</h3>
             <p class="mt-2 text-sm text-[color:var(--muted)]">Course portal for coaching, progress tracking and community learning.</p>
@@ -480,7 +509,7 @@
         </div>
 
         <div class="reveal bg-white border border-slate-200 rounded-2xl p-4 flex flex-col hover:shadow-xl transition-shadow duration-300">
-          <img src="Product 3 , CBT software.png" alt="Exam Portal for Schools" class="w-full h-48 object-cover rounded-xl" />
+          <img src="Product 3 , CBT software.png" alt="Dorvas Exam CBT Portal for Schools" class="w-full h-48 object-cover rounded-xl" />
           <div class="mt-5 flex-grow">
             <h3 class="text-xl font-semibold text-[color:var(--brand-blue)]">Exam Portal for Schools</h3>
             <p class="mt-2 text-sm text-[color:var(--muted)]">CBT exams, results management and admin reporting for schools.</p>
@@ -491,7 +520,7 @@
         </div>
 
         <div class="reveal bg-white border border-slate-200 rounded-2xl p-4 flex flex-col hover:shadow-xl transition-shadow duration-300">
-          <img src="Product 1, Edu App.png" alt="Educational Games" class="w-full h-48 object-cover rounded-xl" />
+          <img src="Product 1, Edu App.png" alt="Dorvas Educational Games" class="w-full h-48 object-cover rounded-xl" />
           <div class="mt-5 flex-grow">
             <h3 class="text-xl font-semibold text-[color:var(--brand-blue)]">Educational Games</h3>
             <p class="mt-2 text-sm text-[color:var(--muted)]">Learning-focused games to improve engagement and retention.</p>
@@ -500,6 +529,43 @@
             Learn More
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="reveal text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-slate-900">How It Works</h2>
+        <p class="mt-3 text-[color:var(--muted)]">Start your tech journey in 3 simple steps.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 relative">
+        <div class="hidden md:block absolute top-1/2 left-1/6 right-1/6 h-0.5 bg-slate-100 -z-10 -translate-y-1/2"></div>
+        
+        <div class="reveal flex flex-col items-center text-center bg-white p-6">
+          <div class="h-16 w-16 bg-slate-100 text-[color:var(--brand-blue)] rounded-full grid place-items-center text-2xl font-black shadow-sm mb-4">1</div>
+          <h3 class="text-xl font-bold text-slate-900">Book a Free Call</h3>
+          <p class="mt-2 text-[color:var(--muted)] text-sm">Fill our contact form. We'll discuss your goals, current skill level, and recommend the best track for you.</p>
+        </div>
+
+        <div class="reveal flex flex-col items-center text-center bg-white p-6">
+          <div class="h-16 w-16 bg-[color:var(--brand-blue)] text-white rounded-full grid place-items-center text-2xl font-black shadow-md mb-4 scale-110">2</div>
+          <h3 class="text-xl font-bold text-slate-900">Learn Practically</h3>
+          <p class="mt-2 text-[color:var(--muted)] text-sm">Join our online or offline sessions. No boring lectures—just hands-on tasks, real tools, and direct mentorship.</p>
+        </div>
+
+        <div class="reveal flex flex-col items-center text-center bg-white p-6">
+          <div class="h-16 w-16 bg-[color:var(--brand-red)] text-white rounded-full grid place-items-center text-2xl font-black shadow-sm mb-4">3</div>
+          <h3 class="text-xl font-bold text-slate-900">Build & Earn</h3>
+          <p class="mt-2 text-[color:var(--muted)] text-sm">Complete real-world projects to build your portfolio. Leave with the confidence to start earning in the digital economy.</p>
+        </div>
+      </div>
+      
+      <div class="reveal text-center mt-10">
+        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">
+          Start Step 1 Today
+        </a>
       </div>
     </div>
   </section>
@@ -524,7 +590,6 @@
           <div class="absolute top-8 right-8 text-[color:var(--brand-blue)] opacity-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
           </div>
-          
           <div class="flex gap-1 text-[color:var(--brand-red)] mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -532,15 +597,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           </div>
-          
           <p class="text-slate-700 text-lg leading-relaxed relative z-10 font-medium italic">
             "Dorvas helped us improve our online presence and set up a website that customers can actually use. Communication was clear, and delivery was straightforward."
           </p>
-          
           <div class="mt-8 flex items-center gap-4">
-            <div class="h-12 w-12 rounded-full bg-gradient-to-br from-[color:var(--brand-blue)] to-blue-800 text-white grid place-items-center font-bold text-xl shadow-md flex-shrink-0">
-              BA
-            </div>
+            <div class="h-12 w-12 rounded-full bg-gradient-to-br from-[color:var(--brand-blue)] to-blue-800 text-white grid place-items-center font-bold text-xl shadow-md flex-shrink-0">BA</div>
             <div>
               <div class="font-extrabold text-slate-900 text-lg">Blessing A.</div>
               <div class="text-sm font-medium text-[color:var(--brand-red)]">Small Business Owner • Port Harcourt</div>
@@ -552,7 +613,6 @@
           <div class="absolute top-8 right-8 text-[color:var(--brand-blue)] opacity-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
           </div>
-          
           <div class="flex gap-1 text-[color:var(--brand-red)] mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -560,15 +620,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           </div>
-          
           <p class="text-slate-700 text-lg leading-relaxed relative z-10 font-medium italic">
             "The classes were practical and easy to follow. We worked on real tasks, not just theory, and I built confidence quickly."
           </p>
-          
           <div class="mt-8 flex items-center gap-4">
-            <div class="h-12 w-12 rounded-full bg-gradient-to-br from-[color:var(--brand-red)] to-red-800 text-white grid place-items-center font-bold text-xl shadow-md flex-shrink-0">
-              CK
-            </div>
+            <div class="h-12 w-12 rounded-full bg-gradient-to-br from-[color:var(--brand-red)] to-red-800 text-white grid place-items-center font-bold text-xl shadow-md flex-shrink-0">CK</div>
             <div>
               <div class="font-extrabold text-slate-900 text-lg">Chinedu K.</div>
               <div class="text-sm font-medium text-[color:var(--brand-blue)]">Student • Data Analytics Coaching</div>
@@ -579,11 +635,62 @@
     </div>
   </section>
 
+  <section id="faq" class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="reveal text-center mb-10">
+        <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+        <p class="mt-3 text-[color:var(--muted)]">Everything you need to know before joining Dorvas Technologies.</p>
+      </div>
+
+      <div class="reveal flex flex-col gap-4">
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+            Do I need prior experience to join a training track?
+            <svg class="w-5 h-5 transition-transform duration-300 text-[color:var(--brand-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Not at all! Our training is designed to take you from absolute beginner to an employable professional. Sir Adiela and our instructors break down complex topics into simple, actionable steps.
+          </div>
+        </div>
+        
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+            Do I need a laptop for the courses?
+            <svg class="w-5 h-5 transition-transform duration-300 text-[color:var(--brand-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Yes, having a personal laptop is highly recommended. Because our focus is heavily practical, you will need a device to practice real-world tasks like building dashboards, coding websites, or designing flyers during and after classes.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+            Are the classes online or physical?
+            <svg class="w-5 h-5 transition-transform duration-300 text-[color:var(--brand-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+            We offer both! We have a physical training hub at our Port Harcourt office (Suite 58 Georgewill/Clifford Plaza) for immersive learning, as well as robust online sessions for distance learners.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+            Do you offer payment plans?
+            <svg class="w-5 h-5 transition-transform duration-300 text-[color:var(--brand-blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Yes, we understand that flexibility is important. Contact us via WhatsApp or the form below to discuss a flexible payment structure that works for you.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="py-14 bg-gradient-to-br from-slate-50 via-white to-indigo-50 border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 items-start">
         <div class="reveal bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
-          <h2 class="text-3xl font-extrabold">Contact</h2>
+          <h2 class="text-3xl font-extrabold text-slate-900">Contact</h2>
           <p class="mt-3 text-[color:var(--muted)]">Fill the form and submit. You’ll receive our reply after we review your request.</p>
           <div class="mt-6 space-y-3 text-sm text-slate-700">
             <div><b>Office Address:</b> Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.</div>
@@ -595,21 +702,20 @@
           </div>
         </div>
 
-        <form action="https://formsubmit.co/microsoftportharcourt@gmail.com" method="POST"
-              class="reveal bg-white border border-slate-200 rounded-3xl p-6 space-y-4 shadow-sm">
+        <form action="https://formsubmit.co/microsoftportharcourt@gmail.com" method="POST" class="reveal bg-white border border-slate-200 rounded-3xl p-6 space-y-4 shadow-sm">
           <input type="hidden" name="_subject" value="Dorvas Technologies - New Contact Request">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_next" value="https://dovas-beta.vercel.app/thank-you.html">
 
           <div class="grid md:grid-cols-2 gap-4">
-            <input required name="name" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Full name" />
-            <input required name="phone" class="border border-slate-200 rounded-xl px-4 py-3" placeholder="Phone number" />
+            <input required name="name" class="border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]" placeholder="Full name" />
+            <input required name="phone" class="border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]" placeholder="Phone number" />
           </div>
 
-          <input required type="email" name="email" class="border border-slate-200 rounded-xl px-4 py-3 w-full" placeholder="Email address" />
+          <input required type="email" name="email" class="border border-slate-200 rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]" placeholder="Email address" />
 
-          <select required name="service" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
+          <select required name="service" class="border border-slate-200 rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]">
             <option value="" selected disabled>Service interested in</option>
             <option>Data Analytics Training</option>
             <option>Data Analytics Consultancy</option>
@@ -629,14 +735,14 @@
             <option>IT Services</option>
           </select>
 
-          <select name="product" class="border border-slate-200 rounded-xl px-4 py-3 w-full">
+          <select name="product" class="border border-slate-200 rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]">
             <option value="" selected>Product interested in (optional)</option>
             <option>Online Learning Platform</option>
             <option>Exam Portal for Schools</option>
             <option>Educational Games</option>
           </select>
 
-          <textarea required name="message" class="border border-slate-200 rounded-xl px-4 py-3 w-full h-28" placeholder="Tell us about your request..."></textarea>
+          <textarea required name="message" class="border border-slate-200 rounded-xl px-4 py-3 w-full h-28 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-blue)]" placeholder="Tell us about your request..."></textarea>
 
           <button type="submit" class="w-full px-6 py-3 rounded-full bg-[color:var(--brand-blue)] text-white font-semibold hover:opacity-90 transition">
             Send Request
@@ -650,11 +756,11 @@
     </div>
   </section>
 
-  <footer class="bg-[color:var(--brand-blue)] text-white">
-    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-10">
+  <footer class="bg-[color:var(--brand-blue)] text-white relative">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-10 relative z-10">
       <div class="reveal">
         <div class="flex items-center gap-3">
-          <img src="dorvas-logo.png" alt="Dorvas Technologies Logo" class="h-12 w-auto object-contain" />
+          <img src="dorvas-logo.png" alt="Dorvas Technologies Logo" class="h-12 w-auto object-contain bg-white rounded p-1" />
           <div class="leading-tight">
             <div class="font-extrabold text-lg">Dorvas Technologies</div>
             <div class="text-xs text-white/70">Reliability • Innovation • Community</div>
@@ -667,28 +773,14 @@
         </p>
 
         <div class="mt-6 flex items-center gap-3">
-          <a href="https://www.facebook.com/samogide.adiela" target="_blank" rel="noreferrer"
-             class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
-             aria-label="Facebook" title="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5">
-              <path d="M22 12.07C22 6.477 17.523 2 11.93 2S1.86 6.477 1.86 12.07c0 5.01 3.657 9.168 8.437 9.93v-7.02H7.898v-2.91h2.399V9.845c0-2.37 1.41-3.68 3.57-3.68 1.035 0 2.115.185 2.115.185v2.33h-1.191c-1.173 0-1.538.728-1.538 1.475v1.77h2.617l-.418 2.91h-2.2V22c4.78-.762 8.437-4.92 8.437-9.93z"/>
-            </svg>
+          <a href="https://www.facebook.com/samogide.adiela" target="_blank" rel="noreferrer" class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition hover:-translate-y-1" aria-label="Facebook" title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5"><path d="M22 12.07C22 6.477 17.523 2 11.93 2S1.86 6.477 1.86 12.07c0 5.01 3.657 9.168 8.437 9.93v-7.02H7.898v-2.91h2.399V9.845c0-2.37 1.41-3.68 3.57-3.68 1.035 0 2.115.185 2.115.185v2.33h-1.191c-1.173 0-1.538.728-1.538 1.475v1.77h2.617l-.418 2.91h-2.2V22c4.78-.762 8.437-4.92 8.437-9.93z"/></svg>
           </a>
-
-          <a href="https://www.youtube.com/@samgoldtales" target="_blank" rel="noreferrer"
-             class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
-             aria-label="YouTube" title="YouTube">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5">
-              <path d="M23.498 6.186a3.017 3.017 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.017 3.017 0 0 0 .502 6.186 31.244 31.244 0 0 0 0 12a31.244 31.244 0 0 0 .502 5.814 3.017 3.017 0 0 0 2.122 2.136C4.495 20.455 12 20.455 12 20.455s7.505 0 9.376-.505a3.017 3.017 0 0 0 2.122-2.136A31.244 31.244 0 0 0 24 12a31.244 31.244 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
+          <a href="https://www.youtube.com/@samgoldtales" target="_blank" rel="noreferrer" class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition hover:-translate-y-1" aria-label="YouTube" title="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5"><path d="M23.498 6.186a3.017 3.017 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.017 3.017 0 0 0 .502 6.186 31.244 31.244 0 0 0 0 12a31.244 31.244 0 0 0 .502 5.814 3.017 3.017 0 0 0 2.122 2.136C4.495 20.455 12 20.455 12 20.455s7.505 0 9.376-.505a3.017 3.017 0 0 0 2.122-2.136A31.244 31.244 0 0 0 24 12a31.244 31.244 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
-
-          <a href="https://ng.linkedin.com/in/adiela-sam-ogide-742948120" target="_blank" rel="noreferrer"
-             class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition"
-             aria-label="LinkedIn" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5">
-              <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.107v1.561h.045c.433-.82 1.494-1.684 3.073-1.684 3.287 0 3.893 2.164 3.893 4.977v6.598zM5.337 7.433A1.804 1.804 0 1 1 5.34 3.82a1.804 1.804 0 0 1-.003 3.613zM6.956 20.452H3.712V9h3.244v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"/>
-            </svg>
+          <a href="https://ng.linkedin.com/in/adiela-sam-ogide-742948120" target="_blank" rel="noreferrer" class="h-11 w-11 rounded-lg bg-[color:var(--brand-red)] grid place-items-center hover:opacity-90 transition hover:-translate-y-1" aria-label="LinkedIn" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-5 w-5"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.107v1.561h.045c.433-.82 1.494-1.684 3.073-1.684 3.287 0 3.893 2.164 3.893 4.977v6.598zM5.337 7.433A1.804 1.804 0 1 1 5.34 3.82a1.804 1.804 0 0 1-.003 3.613zM6.956 20.452H3.712V9h3.244v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"/></svg>
           </a>
         </div>
       </div>
@@ -718,7 +810,7 @@
         <h4 class="font-extrabold tracking-wide uppercase">Company</h4>
         <ul class="mt-5 space-y-3 text-white/80 text-sm">
           <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
           <li><a href="https://sites.google.com/view/samogide/home" target="_blank" rel="noreferrer" class="hover:text-white transition">Portfolio</a></li>
           <li><a href="mailto:microsoftportharcourt@gmail.com" class="hover:text-white transition">microsoftportharcourt@gmail.com</a></li>
           <li class="text-white/70">Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.</li>
@@ -726,14 +818,55 @@
       </div>
     </div>
 
-    <div class="border-t border-white/15">
+    <div class="border-t border-white/15 relative z-10">
       <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col md:flex-row gap-2 items-center justify-center text-white/75 text-sm">
         <div>Copyright @ Dorvas Technologies - All Right Reserved.</div>
       </div>
     </div>
   </footer>
 
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-40 h-12 w-12 bg-slate-800 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-[color:var(--brand-blue)] transform translate-y-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div id="chat-window" class="hidden w-[90vw] sm:w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden mb-4 transition-all duration-300">
+      
+      <div class="bg-[color:var(--brand-blue)] p-4 text-white flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="h-2.5 w-2.5 bg-green-400 rounded-full animate-pulse"></div>
+          <h3 class="font-bold text-sm tracking-wide">Dorvas Assistant</h3>
+        </div>
+        <button id="close-chat" class="text-white/70 hover:text-white font-bold text-xl leading-none">&times;</button>
+      </div>
+
+      <div id="chat-messages" class="h-72 p-4 overflow-y-auto flex flex-col gap-3 bg-slate-50 text-sm">
+        <div class="bg-slate-200 text-slate-800 p-3 rounded-r-xl rounded-bl-xl max-w-[90%] self-start shadow-sm leading-relaxed">
+          Hello! 👋 I'm the Dorvas Assistant. Ask me about our <b>services</b>, <b>products</b>, <b>founder</b>, or <b>contact</b> details!
+          
+          <div class="mt-3">
+            <a href="https://wa.me/2348162337303" target="_blank" class="inline-flex items-center gap-1.5 bg-[#25D366] text-white px-3 py-1.5 rounded-full text-xs font-bold hover:bg-[#1ebd5a] transition shadow-sm">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.305-.885-.653-1.48-1.459-1.653-1.756-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3 bg-white border-t border-slate-100 flex gap-2 items-center">
+        <input type="text" id="chat-input" placeholder="Ask a question..." class="flex-1 bg-slate-100 rounded-full px-4 py-2.5 outline-none text-sm focus:ring-2 ring-[color:var(--brand-blue)] transition-all" onkeypress="handleChatEnter(event)" />
+        <button onclick="sendChatMessage()" class="h-10 w-10 bg-[color:var(--brand-blue)] text-white rounded-full grid place-items-center hover:opacity-90 transition-opacity flex-shrink-0">
+          <svg class="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <button id="chat-toggle" class="h-14 w-14 bg-[color:var(--brand-red)] rounded-full shadow-xl shadow-red-900/20 text-white grid place-items-center hover:scale-110 transition-transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+    </button>
+  </div>
   <script>
+    // --- UI LOGIC ---
     const mobileBtn = document.getElementById("mobileBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     mobileBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
@@ -746,8 +879,52 @@
     }, {threshold: 0.12});
     items.forEach(el=>io.observe(el));
 
-    // SLIDER LOGIC
-    // Exactly matching all the valid filenames including double spaces in the exact order found
+    // --- NAVIGATION, SCROLLSPY & BACK TO TOP LOGIC ---
+    const header = document.getElementById('main-header');
+    const backToTopBtn = document.getElementById('back-to-top');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      // Header shadow on scroll
+      if (window.scrollY > 50) {
+        header.classList.add('shadow-md');
+      } else {
+        header.classList.remove('shadow-md');
+      }
+
+      // Back to Top button visibility
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+      }
+
+      // Scrollspy (Active link highlighting)
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-[color:var(--brand-red)]', 'font-bold');
+        if (link.getAttribute('href').includes(current) && current !== null) {
+          link.classList.add('text-[color:var(--brand-red)]', 'font-bold');
+        }
+      });
+    });
+
+    // Back to top click action
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // --- SLIDER LOGIC ---
     const images = [
       "dorvasoperation2.jpg", 
       "dorvasoperation4.jpg",
@@ -785,7 +962,7 @@
 
     setInterval(updateSlider, 5000);
 
-    // TOGGLE READ MORE/LESS LOGIC
+    // --- TOGGLE READ MORE/LESS LOGIC ---
     function toggleServiceDetails(btn) {
       const content = btn.nextElementSibling;
       if (content.classList.contains('hidden')) {
@@ -798,38 +975,15 @@
         btn.innerText = 'READ MORE';
       }
     }
-  </script>
-  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-    <div id="chat-window" class="hidden w-[90vw] sm:w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden mb-4 transition-all duration-300">
-      
-      <div class="bg-[color:var(--brand-blue)] p-4 text-white flex justify-between items-center">
-        <div class="flex items-center gap-2">
-          <div class="h-2.5 w-2.5 bg-green-400 rounded-full animate-pulse"></div>
-          <h3 class="font-bold text-sm tracking-wide">Dorvas Assistant</h3>
-        </div>
-        <button id="close-chat" class="text-white/70 hover:text-white font-bold text-xl leading-none">&times;</button>
-      </div>
 
-      <div id="chat-messages" class="h-72 p-4 overflow-y-auto flex flex-col gap-3 bg-slate-50 text-sm">
-        <div class="bg-slate-200 text-slate-800 p-3 rounded-r-xl rounded-bl-xl max-w-[85%] self-start shadow-sm leading-relaxed">
-          Hello! 👋 I'm the Dorvas Assistant. How can I help you today? You can ask me about our <b>services</b>, <b>products</b>, <b>location</b>, or <b>contact</b> details!
-        </div>
-      </div>
+    // --- FAQ TOGGLE LOGIC ---
+    function toggleFAQ(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
 
-      <div class="p-3 bg-white border-t border-slate-100 flex gap-2 items-center">
-        <input type="text" id="chat-input" placeholder="Ask a question..." class="flex-1 bg-slate-100 rounded-full px-4 py-2.5 outline-none text-sm focus:ring-2 ring-[color:var(--brand-blue)] transition-all" onkeypress="handleChatEnter(event)" />
-        <button onclick="sendChatMessage()" class="h-10 w-10 bg-[color:var(--brand-blue)] text-white rounded-full grid place-items-center hover:opacity-90 transition-opacity flex-shrink-0">
-          <svg class="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
-        </button>
-      </div>
-    </div>
-
-    <button id="chat-toggle" class="h-14 w-14 bg-[color:var(--brand-red)] rounded-full shadow-xl shadow-red-900/20 text-white grid place-items-center hover:scale-110 transition-transform duration-300">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
-    </button>
-  </div>
-
-  <script>
     // --- CHATBOT LOGIC ---
     const chatWindow = document.getElementById('chat-window');
     const chatToggle = document.getElementById('chat-toggle');
@@ -837,11 +991,9 @@
     const chatMessages = document.getElementById('chat-messages');
     const chatInput = document.getElementById('chat-input');
 
-    // Open/Close chat
     chatToggle.addEventListener('click', () => chatWindow.classList.toggle('hidden'));
     closeChat.addEventListener('click', () => chatWindow.classList.add('hidden'));
 
-    // Trigger send on Enter key
     function handleChatEnter(e) {
       if (e.key === 'Enter') sendChatMessage();
     }
@@ -850,11 +1002,9 @@
       const text = chatInput.value.trim();
       if (!text) return;
 
-      // Add user's message to chat
       addMessage(text, 'user');
       chatInput.value = '';
 
-      // Show typing simulation, then reply
       setTimeout(() => {
         const reply = getBotResponse(text.toLowerCase());
         addMessage(reply, 'bot');
@@ -863,20 +1013,27 @@
 
     function addMessage(text, sender) {
       const msgDiv = document.createElement('div');
-      // Style differently if it's the user vs the bot
       msgDiv.className = `p-3 max-w-[85%] text-sm shadow-sm leading-relaxed ${
         sender === 'user' 
         ? 'bg-[color:var(--brand-blue)] text-white rounded-l-xl rounded-tr-xl self-end' 
         : 'bg-slate-200 text-slate-800 rounded-r-xl rounded-bl-xl self-start'
       }`;
-      msgDiv.innerHTML = text; // innerHTML allows bold tags
+      msgDiv.innerHTML = text; 
       chatMessages.appendChild(msgDiv);
-      // Auto-scroll to the bottom
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
-    // THE "BRAIN" OF THE BOT (Keyword matching based on your actual site info)
+    // --- THE "BRAIN" OF THE BOT ---
     function getBotResponse(input) {
+      if(input.includes('founder') || input.includes('ceo') || input.includes('adiela') || input.includes('sam') || input.includes('owner') || input.includes('who is')) {
+        return "Dorvas Technologies was founded by <b>Sir Adiela Sam</b>. He is a UniPort Geology graduate with a Master’s in Renewable Energy and expertise in Data Analytics and AI Workflows. He is known for his integrity and passion for empowering youths with income-producing digital skills!";
+      }
+      if(input.includes('experience') || input.includes('student') || input.includes('microsoft') || input.includes('mentor') || input.includes('train')) {
+        return "With over 8 years of coaching experience, our founder Sir Adiela has trained 200+ students in high-demand skills like YouTube Automation, Data Analytics, and AI. He has also guided over 40 Microsoft-certified students from reputable schools like Spring Valley School and Jephthah College!";
+      }
+      if(input.includes('about') || input.includes('company') || input.includes('registered') || input.includes('cama') || input.includes('when')) {
+        return "Dorvas Technologies is a Port Harcourt-based tech hub registered under CAMA 2020 on <b>22 May, 2025</b>. We empower individuals and organizations through digital competence, practical training, and dependable IT services.";
+      }
       if(input.includes('address') || input.includes('location') || input.includes('where') || input.includes('office')) {
         return "We are located at <b>Suite 58 Georgewill/Clifford Plaza Choba Junction</b>, Port Harcourt, Rivers State, Nigeria.";
       }
@@ -904,11 +1061,8 @@
       if(input.includes('hello') || input.includes('hi ') || input.includes('hey')) {
         return "Hello there! How can Dorvas Technologies help you today?";
       }
-      
-      // Default fallback response if it doesn't recognize the word
-      return "I am a simple automated assistant. I can tell you about our <b>Services</b>, <b>Products</b>, <b>Pricing</b>, or <b>Location</b>. For complex questions, please use our Contact Form or call us directly!";
+      return "I am a simple automated assistant. I can tell you about our <b>Founder (Sir Adiela Sam)</b>, <b>Services</b>, <b>Products</b>, <b>Pricing</b>, or <b>Location</b>. For complex questions, please use the WhatsApp button above or the Contact Form!";
     }
   </script>
-
 </body>
 </html>
