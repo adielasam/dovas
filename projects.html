@@ -2,379 +2,256 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Projects – Dorvas Technologies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Our Projects | Dorvas Technologies</title>
+  <meta name="description" content="View the portfolio of projects built by Dorvas Technologies, including Data Analytics dashboards, School Management software, and custom websites." />
+  
+  <link rel="icon" type="image/png" href="dorvas-logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    :root {
-      --deep-blue: #0a1f44;
-      --mid-blue:  #1a3a6e;
-      --light-blue:#2563b0;
-      --gold:      #f5c518;
-      --gold-dark: #d4a80c;
-      --white:     #ffffff;
-      --off-white: #f4f6fb;
-      --gray:      #6b7280;
-      --text:      #1a1a2e;
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'DM Sans', sans-serif;
-      --nav-height: 80px;
-      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+    :root{
+      --brand-blue:#3E468C;
+      --brand-red:#E53935;
+      --ink:#0F172A;
+      --muted:#64748B;
+      --bg:#F6F8FC;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; }
-    img { display: block; width: 100%; height: 100%; object-fit: cover; }
-    a  { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
-    .section-label { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
-    .section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); color: var(--deep-blue); line-height: 1.2; margin-top: .5rem; }
-    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .75rem 1.8rem; border-radius: 4px; font-family: var(--font-body); font-size: .9rem; font-weight: 600; letter-spacing: .05em; cursor: pointer; transition: var(--transition); border: 2px solid transparent; }
-    .btn-primary { background: var(--gold); color: var(--deep-blue); }
-    .btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); }
-    .btn-blue { background: var(--deep-blue); color: var(--white); }
-    .btn-blue:hover { background: var(--mid-blue); transform: translateY(-2px); }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-    
-    /* Top Bar & Nav */
-    .top-bar { background: var(--deep-blue); color: rgba(255,255,255,.75); font-size: .8rem; padding: .45rem 0; }
-    .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
-    .top-bar a { color: var(--gold); }
-    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); box-shadow: 0 2px 20px rgba(10,31,68,.12); height: var(--nav-height); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 100%; }
-    .logo { display: flex; align-items: center; gap: .75rem; }
-    .logo-img { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; background: var(--deep-blue); flex-shrink: 0; }
-    .logo-img img { width: 100%; height: 100%; object-fit: cover; }
-    .logo-text .school-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 900; color: var(--deep-blue); line-height: 1.1; }
-    .logo-text .school-tagline { font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; }
-    .nav-links { display: flex; align-items: center; gap: 0; }
-    .nav-links li a { display: block; padding: 0 1.1rem; height: var(--nav-height); line-height: var(--nav-height); font-size: .88rem; font-weight: 500; color: var(--deep-blue); position: relative; transition: color var(--transition); }
-    .nav-links li a::after { content: ''; position: absolute; bottom: 0; left: 1.1rem; right: 1.1rem; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform var(--transition); }
-    .nav-links li a:hover { color: var(--light-blue); }
-    .nav-links li a:hover::after { transform: scaleX(1); }
-    .nav-cta { margin-left: 1rem; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: .5rem; background: none; border: none; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: var(--deep-blue); transition: var(--transition); }
-    .mobile-nav { display: none; position: fixed; top: var(--nav-height); left: 0; right: 0; bottom: 0; background: var(--deep-blue); z-index: 999; padding: 2rem; flex-direction: column; gap: .5rem; overflow-y: auto; }
-    .mobile-nav.open { display: flex; }
-    .mobile-nav a { font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,.85); padding: .9rem 0; border-bottom: 1px solid rgba(255,255,255,.1); transition: color var(--transition); }
-    .mobile-nav a:hover { color: var(--gold); }
-    .mobile-nav .btn { margin-top: 1.5rem; align-self: flex-start; }
-
-    /* Page Banner */
-    .projects-banner { background: linear-gradient(135deg, #0a1f44 40%, #1a3a6e); padding: 5rem 0; text-align: center; color: var(--white); }
-    .projects-banner .slide-eyebrow { display: inline-block; background: var(--gold); color: var(--deep-blue); font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 2px; margin-bottom: 1.2rem; }
-    .projects-banner .slide-title { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1rem; }
-    .projects-banner .slide-title em { color: var(--gold); font-style: normal; }
-    .projects-banner .slide-desc { font-size: 1.1rem; color: rgba(255,255,255,.82); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-
-    /* Projects Layout */
-    .projects-section { padding: 6rem 0; background: var(--off-white); }
-    .project-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; margin-bottom: 5rem; background: var(--white); padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(10,31,68,.05); transition: var(--transition); }
-    .project-row:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(10,31,68,.1); }
-    .project-row.reverse { direction: rtl; }
-    .project-row.reverse > * { direction: ltr; }
-    .project-img-wrap { border-radius: 8px; overflow: hidden; height: 350px; background: var(--mid-blue); position: relative; border: 1px solid rgba(10,31,68,.05); }
-    .project-img-wrap img { transition: transform 0.6s ease; }
-    .project-row:hover .project-img-wrap img { transform: scale(1.05); }
-    .project-info .section-label { margin-bottom: .5rem; }
-    .project-info h3 { font-family: var(--font-display); font-size: 2rem; color: var(--deep-blue); margin-bottom: 1rem; line-height: 1.2; }
-    .project-info p { color: var(--gray); line-height: 1.7; margin-bottom: 1.5rem; }
-
-    /* Footer */
-    footer { background: var(--deep-blue); padding: 4rem 0 0; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.1); }
-    .footer-brand .school-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); margin: 1rem 0 .5rem; }
-    .footer-brand p { font-size: .88rem; color: rgba(255,255,255,.6); line-height: 1.7; }
-    .footer-logo-wrap { width: 60px; height: 60px; border-radius: 50%; overflow: hidden; }
-    .footer-logo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-    .footer-col h4 { font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 1.2rem; }
-    .footer-col ul li { margin-bottom: .65rem; }
-    .footer-col ul li a { font-size: .88rem; color: rgba(255,255,255,.6); transition: color var(--transition); }
-    .footer-col ul li a:hover { color: var(--gold); }
-    .footer-contact-item { display: flex; gap: .7rem; margin-bottom: .9rem; }
-    .footer-contact-item svg { width: 18px; height: 18px; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
-    .footer-contact-item p { font-size: .85rem; color: rgba(255,255,255,.65); line-height: 1.5; }
-    .newsletter-form { display: flex; margin-top: 1rem; border: 1px solid rgba(255,255,255,.2); border-radius: 4px; overflow: hidden; }
-    .newsletter-form input { flex: 1; background: none; border: none; padding: .6rem .9rem; font-size: .85rem; color: var(--white); outline: none; }
-    .newsletter-form button { background: var(--gold); border: none; padding: .6rem 1rem; cursor: pointer; font-weight: 700; font-size: .8rem; color: var(--deep-blue); transition: var(--transition); }
-    .newsletter-form button:hover { background: var(--gold-dark); }
-    .social-row { display: flex; gap: .6rem; margin-top: 1rem; }
-    .social-btn { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; transition: var(--transition); color: rgba(255,255,255,.7); }
-    .social-btn:hover { background: var(--gold); color: var(--deep-blue); }
-    .social-btn svg { width: 16px; height: 16px; }
-    .footer-bottom { padding: 1.2rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
-    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.4); }
-    .footer-bottom p a { color: var(--gold); transition: color var(--transition); }
-    .footer-bottom p a:hover { color: var(--gold-dark); }
-    .footer-bottom-links { display: flex; gap: 1.2rem; }
-    .footer-bottom-links a { font-size: .8rem; color: rgba(255,255,255,.4); transition: color var(--transition); }
-    .footer-bottom-links a:hover { color: var(--gold); }
-
-    @media (max-width: 900px) {
-      .nav-links, .nav-cta { display: none; }
-      .hamburger { display: flex; }
-      .project-row { grid-template-columns: 1fr; gap: 2.5rem; padding: 1.5rem; }
-      .project-row.reverse { direction: ltr; }
-      .project-img-wrap { height: 250px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+    html{scroll-behavior:smooth;}
+    .hero-glow{
+      background: radial-gradient(900px 450px at 30% 20%, rgba(62,70,140,.35) 0%, rgba(62,70,140,0) 60%),
+                  radial-gradient(700px 400px at 80% 60%, rgba(229,57,53,.25) 0%, rgba(229,57,53,0) 62%),
+                  linear-gradient(180deg, #070A14 0%, #0B1024 40%, #0E1633 100%);
     }
-    @media (max-width: 600px) {
-      .footer-grid { grid-template-columns: 1fr; }
+    .gridline{
+      background-image: linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+      background-size: 56px 56px;
     }
-    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .reveal{opacity:0; transform: translateY(12px); transition: all .7s ease;}
+    .reveal.show{opacity:1; transform: translateY(0);}
   </style>
 </head>
-<body>
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <div>
-        <span>📞</span> 08162337303 &nbsp;|&nbsp;
-        <a href="mailto:microsoftportharcourt@gmail.com">microsoftportharcourt@gmail.com</a>
-      </div>
-      <div>
-        Crèche &bull; Nursery &bull; Basic &bull; Secondary &bull; Sixth Form
-      </div>
-    </div>
-  </div>
+<body class="bg-[color:var(--bg)] text-[color:var(--ink)]">
 
   <!-- NAVIGATION -->
-  <nav>
-    <div class="container nav-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-img">
-          <img src="logodovas.png" alt="Dorvas International Academy Logo"/>
-        </div>
-        <div class="logo-text">
-          <div class="school-name">Dorvas International Academy</div>
-          <div class="school-tagline">Shaping Tomorrow's Champions</div>
+  <header id="main-header" class="bg-white sticky top-0 z-50 border-b border-slate-100 transition-shadow duration-300 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="dorvas-logo.png" alt="Dorvas Technologies Logo" class="h-12 w-auto object-contain" />
+        <div class="hidden sm:block leading-tight">
+          <div class="font-extrabold text-slate-900">Dorvas Technologies</div>
+          <div class="text-xs text-slate-500">IT Services • Training • Consulting</div>
         </div>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#admission">Admission</a></li>
-        <li><a href="index.html#academics">Academics</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#gallery">Gallery</a></li>
-        <li><a href="index.html#contact">News &amp; Events</a></li>
-      </ul>
-      <a href="https://springdrill-portal.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Student Portal</a>
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-700">
+        <a href="index.html#home" class="hover:text-[color:var(--brand-blue)] transition">HOME</a>
+        <a href="index.html#about" class="hover:text-[color:var(--brand-blue)] transition">ABOUT</a>
+        <a href="index.html#services" class="hover:text-[color:var(--brand-blue)] transition">SERVICES</a>
+        <a href="index.html#products" class="hover:text-[color:var(--brand-blue)] transition">PRODUCTS</a>
+        <a href="projects.html" class="text-[color:var(--brand-red)] font-bold transition">PORTFOLIO</a>
+        <a href="index.html#contact" class="hover:text-[color:var(--brand-blue)] transition">CONTACT</a>
+      </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="hidden md:inline-flex items-center justify-center px-6 py-3 rounded-full bg-[color:var(--brand-blue)] text-white font-semibold shadow-sm hover:opacity-90 transition">
+          Book a Call
+        </a>
+        <button id="mobileBtn" class="md:hidden px-4 py-2 rounded-xl border border-slate-200 text-slate-800">
+          Menu
+        </button>
+      </div>
     </div>
-  </nav>
 
-  <!-- Mobile menu -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="index.html#about" onclick="closeMenu()">About</a>
-    <a href="index.html#admission" onclick="closeMenu()">Admission</a>
-    <a href="index.html#academics" onclick="closeMenu()">Academics</a>
-    <a href="projects.html" onclick="closeMenu()">Projects</a>
-    <a href="index.html#gallery" onclick="closeMenu()">Gallery</a>
-    <a href="index.html#contact" onclick="closeMenu()">News &amp; Events</a>
-    <a href="https://springdrill-portal.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" onclick="closeMenu()">Student Portal →</a>
-  </div>
-
-  <!-- PAGE BANNER -->
-  <header class="projects-banner">
-    <div class="container fade-up">
-      <div class="slide-eyebrow">Our Portfolio</div>
-      <h1 class="slide-title">Featured <em>Projects</em></h1>
-      <p class="slide-desc">Explore a showcase of our dynamic digital solutions, management software, and responsive web developments tailored for excellence.</p>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white shadow-lg absolute w-full">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-slate-700">
+        <a href="index.html#home" class="py-2 hover:text-[color:var(--brand-red)]">HOME</a>
+        <a href="index.html#about" class="py-2 hover:text-[color:var(--brand-red)]">ABOUT</a>
+        <a href="index.html#services" class="py-2 hover:text-[color:var(--brand-red)]">SERVICES</a>
+        <a href="projects.html" class="py-2 font-bold text-[color:var(--brand-red)]">PORTFOLIO</a>
+        <a href="index.html#contact" class="py-2 hover:text-[color:var(--brand-red)]">CONTACT</a>
+      </div>
     </div>
   </header>
 
-  <!-- PROJECTS GRID -->
-  <section class="projects-section">
-    <div class="container">
+  <!-- PAGE HEADER -->
+  <section class="hero-glow text-white relative py-20 text-center overflow-hidden">
+    <div class="absolute inset-0 gridline opacity-50 pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 reveal">
+      <span class="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm font-semibold mb-4 border border-white/20">Our Portfolio</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Featured <span class="text-[color:var(--brand-red)]">Projects</span></h1>
+      <p class="mt-4 text-white/80 text-lg">Explore a showcase of our dynamic digital solutions, management software, data dashboards, and responsive web developments tailored to solve real problems.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS LIST -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col gap-16">
 
       <!-- PROJECT A -->
-      <div class="project-row fade-up">
-        <div class="project-img-wrap">
-          <img src="dorvas_website.ng" alt="Dorvas Technologies Website" onerror="this.src='logodovas.png'"/>
+      <div class="reveal flex flex-col md:flex-row gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="dorvas_website.ng" alt="Dorvas Technologies Website" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">Web Development</div>
-          <h3>Dorvas Technologies Website</h3>
-          <p>A simple, highly responsive online website establishing the digital footprint for Dorvas Technologies. Designed to communicate core values and services efficiently to clients.</p>
-          <a href="https://dorvastechnologies.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pl-6">
+          <span class="inline-block px-3 py-1 bg-[color:var(--brand-blue)] text-white text-xs font-bold uppercase tracking-wider rounded mb-3">Web Development</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Dorvas Technologies Website</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">A simple, highly responsive online website establishing the digital footprint for Dorvas Technologies. Designed to communicate core values and services efficiently to clients.</p>
+          <a href="https://dorvastechnologies.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
-      <!-- PROJECT B (Reversed layout) -->
-      <div class="project-row reverse fade-up">
-        <div class="project-img-wrap">
-          <img src="Sales_performance.png" alt="Sales Performance Analysis Dashboard" onerror="this.src='logodovas.png'"/>
+      <!-- PROJECT B (Alternating Layout) -->
+      <div class="reveal flex flex-col md:flex-row-reverse gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="Sales_performance.png" alt="Sales Performance Analysis Dashboard" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">Data Analytics & Dashboard</div>
-          <h3>Sales Performance Analysis</h3>
-          <p>In this project, I used Excel 2019 to gather Fasotech's sales data and presented it via an interactive dashboard. Key indicators showed 910 total customers, a profit of $891,111, and sales of $754,941. I identified overall sales trends, customer acquisition growth, and highlighted top territories (Peru, Colombia, Chicago, and Argentina). The goal was to provide actionable insights into performance, geographical profitability, and trends to help Fasotech optimize its business strategies.</p>
-          <a href="https://sites.google.com/view/samogide/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pr-6">
+          <span class="inline-block px-3 py-1 bg-[color:var(--brand-red)] text-white text-xs font-bold uppercase tracking-wider rounded mb-3">Data Analytics</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Sales Performance Analysis</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">In this project, I used Excel 2019 to gather Fasotech's sales data and presented it via an interactive dashboard. Key indicators showed 910 total customers, a profit of $891,111, and sales of $754,941. I identified overall sales trends and highlighted top lucrative territories (Peru, Colombia, Chicago, and Argentina).</p>
+          <a href="https://sites.google.com/view/samogide/portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
       <!-- PROJECT C -->
-      <div class="project-row fade-up">
-        <div class="project-img-wrap">
-          <img src="enetsupremeportal.png" alt="Enet Supreme Academy Portal" onerror="this.src='logodovas.png'"/>
+      <div class="reveal flex flex-col md:flex-row gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="enetsupremeportal.png" alt="Enet Supreme Academy Portal" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">Portal Architecture</div>
-          <h3>Enet Supreme Academy Portal</h3>
-          <p>A full-function, comprehensive academy portal designed to handle diverse operational roles. It features dedicated access levels for administrators, tutors, and students, alongside an integrated financial tracker to streamline school operations.</p>
-          <a href="https://enetsupremeacademy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pl-6">
+          <span class="inline-block px-3 py-1 bg-green-600 text-white text-xs font-bold uppercase tracking-wider rounded mb-3">Portal Architecture</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Enet Supreme Academy Portal</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">A full-function, comprehensive academy portal designed to handle diverse operational roles. It features dedicated access levels for administrators, tutors, and students, alongside an integrated financial tracker to streamline school operations.</p>
+          <a href="https://enetsupremeacademy.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
-      <!-- PROJECT D (Reversed layout) -->
-      <div class="project-row reverse fade-up">
-        <div class="project-img-wrap">
-          <img src="certportal.png" alt="Student Certification Portal" onerror="this.src='logodovas.png'"/>
+      <!-- PROJECT D (Alternating Layout) -->
+      <div class="reveal flex flex-col md:flex-row-reverse gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="certportal.png" alt="Student Certification Portal" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">Database & Certification</div>
-          <h3>Student Certification Portal</h3>
-          <p>A dynamic portal where students can search the database for their names, securely download their termly certificates, and take Computer Based Tests (CBT). It also features a project search engine and dynamically highlights the top 3 projects of the month.</p>
-          <a href="https://miacert.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pr-6">
+          <span class="inline-block px-3 py-1 bg-purple-600 text-white text-xs font-bold uppercase tracking-wider rounded mb-3">Database System</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Student Certification Portal</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">A dynamic portal where students can search the database for their names, securely download their termly certificates, and take Computer Based Tests (CBT). It also features a project search engine dynamically highlighting the top 3 projects of the month.</p>
+          <a href="https://miacert.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
       <!-- PROJECT E -->
-      <div class="project-row fade-up">
-        <div class="project-img-wrap">
-          <img src="dorvasschool.png" alt="Dorvas Academy Secondary School Website" onerror="this.src='logodovas.png'"/>
+      <div class="reveal flex flex-col md:flex-row gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="dorvasschool.png" alt="Dorvas Academy Secondary School Website" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">School Management Web Design</div>
-          <h3>Secondary School Website</h3>
-          <p>A highly professional website built for the overall management of Dorvas Academy. It is optimized to make the school globally searchable, providing parents, students, and stakeholders with greater visibility and easy access to information.</p>
-          <a href="https://dorvasacademy.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pl-6">
+          <span class="inline-block px-3 py-1 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider rounded mb-3">Web Design</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Secondary School Website</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">A highly professional website built for the overall management of Dorvas Academy. It is optimized to make the school globally searchable, providing parents, students, and stakeholders with greater visibility and easy access to information.</p>
+          <a href="https://dorvasacademy.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
-      <!-- PROJECT F (Reversed layout) -->
-      <div class="project-row reverse fade-up">
-        <div class="project-img-wrap">
-          <img src="schoolcbt.png" alt="Full scale school management software" onerror="this.src='logodovas.png'"/>
+      <!-- PROJECT F (Alternating Layout) -->
+      <div class="reveal flex flex-col md:flex-row-reverse gap-8 items-center bg-slate-50 border border-slate-100 rounded-[2rem] p-6 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div class="w-full md:w-1/2">
+          <img src="schoolcbt.png" alt="Full scale school management software" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-md hover:scale-105 transition duration-500" onerror="this.src='dorvas-logo.png'" />
         </div>
-        <div class="project-info">
-          <div class="section-label">SaaS & Assessment Software</div>
-          <h3>Full-Scale School Management Software</h3>
-          <p>An enterprise-level software designed to revolutionize school operations. It enables seamless examination conduct, secure fee payments, and allows teachers to set questions easily. Features include a JAMB-style CBT system and an integrated AI lesson planner.</p>
-          <a href="https://springdrill-portal.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-blue">See Live Demo &rarr;</a>
+        <div class="w-full md:w-1/2 md:pr-6">
+          <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold uppercase tracking-wider rounded mb-3">SaaS / Management</span>
+          <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Full-Scale School Management Software</h3>
+          <p class="text-[color:var(--muted)] leading-relaxed mb-6 text-lg">An enterprise-level software designed to revolutionize school operations. It enables seamless examination conduct, secure fee payments, and allows teachers to set questions easily. Features include a JAMB-style CBT system and an integrated AI lesson planner.</p>
+          <a href="https://springdrill-portal.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-blue)] text-white font-bold hover:opacity-90 transition shadow-lg">View Live Demo &rarr;</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer id="contact">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo-wrap">
-            <img src="logodovas.png" alt="Dorvas International Academy Logo"/>
-          </div>
-          <div class="school-name">Dorvas International Academy</div>
-          <p>A premier private institution in Port Harcourt, Rivers State, committed to raising outstanding students through academic excellence and holistic development.</p>
-          <div class="social-row" style="margin-top:1.2rem;">
-            <a class="social-btn" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a class="social-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a class="social-btn" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#admission">Admission Process</a></li>
-            <li><a href="index.html#academics">Academic Programmes</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#contact">News &amp; Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Programmes</h4>
-          <ul>
-            <li><a href="#">Crèche</a></li>
-            <li><a href="#">Nursery School</a></li>
-            <li><a href="#">Basic / Primary</a></li>
-            <li><a href="#">Junior Secondary</a></li>
-            <li><a href="#">Senior Secondary</a></li>
-            <li><a href="#">Sixth Form</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <p>23 Rumenkini Secondary School Rd,<br/>Port Harcourt, Rivers State, Nigeria</p>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 13a16 16 0 006.09 6.09l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <p>08162337303</p>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <p>microsoftportharcourt@gmail.com</p>
-          </div>
-          <h4 style="margin-top:1.5rem;">Newsletter</h4>
-          <div class="newsletter-form">
-            <input type="email" placeholder="Your email address"/>
-            <button type="button">JOIN</button>
-          </div>
-        </div>
+  <!-- CTA -->
+  <section class="bg-white border-t border-slate-100 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center reveal">
+      <h2 class="text-3xl font-extrabold text-slate-900">Ready to start your own project?</h2>
+      <p class="mt-4 text-[color:var(--muted)] text-lg">Let's work together to build solutions that scale and perform.</p>
+      <div class="mt-8">
+        <a href="index.html#contact" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[color:var(--brand-red)] text-white font-bold hover:opacity-90 transition shadow-lg shadow-red-900/40">Contact Us Today</a>
       </div>
-      <div class="footer-bottom">
-        <p>Dorvas International Academy. All Rights Reserved. &nbsp;|&nbsp; Powered by <a href="https://dorvastechnologies.vercel.app/" target="_blank" rel="noopener noreferrer">Dorvas Technologies</a></p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Terms of Use</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[color:var(--brand-blue)] text-white relative">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-10 relative z-10">
+      <div class="reveal">
+        <div class="flex items-center gap-3">
+          <img src="dorvas-logo.png" alt="Dorvas Technologies Logo" class="h-12 w-auto object-contain bg-white rounded p-1" />
+          <div class="leading-tight">
+            <div class="font-extrabold text-lg">Dorvas Technologies</div>
+            <div class="text-xs text-white/70">Reliability • Innovation • Community</div>
+          </div>
         </div>
+
+        <p class="mt-5 text-white/75 leading-relaxed">
+          Practical training and dependable tech services for individuals, schools, and growing businesses.
+          Built on honesty, fast delivery and real community impact.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <h4 class="font-extrabold tracking-wide uppercase">Services</h4>
+        <ul class="mt-5 space-y-3 text-white/80 text-sm">
+          <li><a href="index.html#services" class="hover:text-white transition">Data Analytics</a></li>
+          <li><a href="index.html#services" class="hover:text-white transition">Digital Marketing</a></li>
+          <li><a href="index.html#services" class="hover:text-white transition">Graphics Design</a></li>
+          <li><a href="index.html#services" class="hover:text-white transition">Web Design & Development</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h4 class="font-extrabold tracking-wide uppercase">Products</h4>
+        <ul class="mt-5 space-y-3 text-white/80 text-sm">
+          <li><a href="index.html#products" class="hover:text-white transition">Online Learning Platform</a></li>
+          <li><a href="index.html#products" class="hover:text-white transition">Exam Portal for Schools</a></li>
+          <li><a href="index.html#products" class="hover:text-white transition">Educational Games</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h4 class="font-extrabold tracking-wide uppercase">Company</h4>
+        <ul class="mt-5 space-y-3 text-white/80 text-sm">
+          <li><a href="index.html#about" class="hover:text-white transition">About Us</a></li>
+          <li><a href="mailto:microsoftportharcourt@gmail.com" class="hover:text-white transition">microsoftportharcourt@gmail.com</a></li>
+          <li class="text-white/70">Suite 58 Georgewill/Clifford Plaza Choba Junction, Port Harcourt, Rivers State, Nigeria.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/15 relative z-10">
+      <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col md:flex-row gap-2 items-center justify-center text-white/75 text-sm">
+        <div>Copyright @ Dorvas Technologies - All Right Reserved.</div>
       </div>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT -->
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
+    // Reveal script
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add("show");
+      });
+    }, {threshold: 0.12});
+    items.forEach(el=>io.observe(el));
 
-    hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
-
-    function closeMenu() { mobileNav.classList.remove('open'); }
-
-    document.addEventListener('click', (e) => {
-      if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) { closeMenu(); }
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    document.querySelector('.newsletter-form button').addEventListener('click', function() {
-      const input = this.previousElementSibling;
-      if (input.value) {
-        alert('Thank you for subscribing! We\'ll keep you updated.');
-        input.value = '';
-      } else {
-        input.focus();
-      }
-    });
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById("mobileBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
   </script>
 </body>
 </html>
